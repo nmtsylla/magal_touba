@@ -11,7 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150622085238) do
+ActiveRecord::Schema.define(version: 20150708173624) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "titre"
+    t.string   "surtitre"
+    t.string   "soustitre"
+    t.text     "descriptif"
+    t.text     "contenu"
+    t.float    "popularite"
+    t.integer  "rubrique_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "articles", ["rubrique_id"], name: "index_articles_on_rubrique_id"
+
+  create_table "evenements", force: :cascade do |t|
+    t.string   "titre"
+    t.string   "descriptif"
+    t.integer  "status"
+    t.string   "lieu"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rubriques", force: :cascade do |t|
+    t.string   "titre"
+    t.string   "descriptif"
+    t.integer  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
