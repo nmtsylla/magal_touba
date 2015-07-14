@@ -159,13 +159,29 @@ header {
     }
 
 /* MENU LINKS SECTION*/
+.menu-section ul li ul{
+    display: none;
+    color: #FFF;
+    background-color:#26C281 ;
+    text-decoration: none;
+    padding: 0px ;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+.menu-section ul li:hover ul {
+    display: block;
+    visibility: visible;
 
-.menu-section {
-    background-color: #3D3D3D;
+}
+
+.menu-section ul li ul a:hover{
+    color: #000000;
+    background-color: #ffffff ;
 }
 
 #menu-top a {
     color: #FFF;
+    background-color: #3D3D3D;
     text-decoration: none;
     font-weight: 500;
     padding: 10px 10px 10px 10px;
@@ -184,13 +200,14 @@ header {
     background-color: #26C281!important;
 }
 
+
 .navbar-inverse {
-    background-color: #03A678;
+    background-color: #ffffff;
     border-color: transparent;
 }
 
 .navbar-toggle {
-    background-color: #26C281;
+    background-color: #ffffff;
     border: 1px solid #fff;
 }
 
@@ -255,7 +272,7 @@ footer {
     margin-bottom: 50px;
 }
 
-#actuprincip{
+.actuprincip{
     height: 390px;
 }
 
