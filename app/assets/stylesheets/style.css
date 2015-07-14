@@ -202,12 +202,12 @@ header {
 
 
 .navbar-inverse {
-    background-color: #03A678;
+    background-color: #ffffff;
     border-color: transparent;
 }
 
 .navbar-toggle {
-    background-color: #26C281;
+    background-color: #ffffff;
     border: 1px solid #fff;
 }
 
@@ -272,7 +272,7 @@ footer {
     margin-bottom: 50px;
 }
 
-#actuprincip{
+.actuprincip{
     height: 390px;
 }
 
