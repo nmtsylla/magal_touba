@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  surtitre: MyString
+  soustitre: MyString
+  descriptif: MyText
+  contenu: MyText
+  popularite: 1.5
+  rubrique_id: 
+
+two:
+  titre: MyString
+  surtitre: MyString
+  soustitre: MyString
+  descriptif: MyText
+  contenu: MyText
+  popularite: 1.5
+  rubrique_id: 
