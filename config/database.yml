@@ -1,5 +1,5 @@
 default: &default
-  adapter: postgres
+  adapter: postgresql
   encoding: unicode
   pool: 5
 
@@ -7,8 +7,8 @@ development:
   <<: *default
   username: postgres
   password: passer
-  socket: /var/run/mysqld/mysqld.sock
   database: ahmdou_db
+  host: localhost
       
 
 # Warning: The database defined as "test" will be erased and
