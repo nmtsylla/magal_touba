@@ -1,3 +1,4 @@
+=begin
 ActiveAdmin.setup do |config|
   # == Site Title
   #
@@ -252,3 +253,4 @@ ActiveAdmin.setup do |config|
   #
   # config.filters = true
 end
+=end
