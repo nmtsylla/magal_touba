@@ -1,10 +1,11 @@
 from fabric.api import local
 
 def sync():
-   local('git add -p')
-   print("enter your git commit comment: ")
-   comment = raw_input()
-   local('git commit -m "%s"' % comment)
+   #local('git add -p')
+   #print("enter your git commit comment: ")
+   #comment = raw_input()
+   local('git pull origin master')
+   local('git commit -a')
    local('git push origin master')
 
 def deploy():
