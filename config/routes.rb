@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  #devise_for :admin_users, ActiveAdmin::Devise.config
-  #ActiveAdmin.routes(self)
+  #mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :evenements
 
   resources :articles
@@ -63,4 +62,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+ # mount Storytime::Engine => '/test'
+
+  mount Storytime::Engine => '/'
 end
