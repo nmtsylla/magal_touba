@@ -6,20 +6,14 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'airbrake'
-gem 'bourbon', '~> 3.2.1'
-gem 'sidekiq'
-gem 'sinatra', require: false
-gem 'slim'
 gem 'email_validator'
-
-gem 'flutie'
 
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer',  platforms: :ruby
+gem "devise", '~> 3.4.1'
 
 gem 'rack-timeout'
 gem 'recipient_interceptor'
@@ -27,7 +21,7 @@ gem 'simple_form', '~> 3.1.0.rc2', github: 'plataformatec/simple_form', branch: 
 gem 'title'
 gem 'unicorn'
 gem 'autoprefixer-rails'
-gem 'storytime', github: 'flyoverworks/storytime', branch: 'master'
+# gem 'storytime', github: 'flyoverworks/storytime', branch: 'master'
 
 gem 'friendly_id', '~> 5.1.0'
 
@@ -63,7 +57,6 @@ end
 
 gem 'paperclip', '~> 4.2.1'
 gem 'momentjs-rails'
-gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
 
 group :staging, :production do
