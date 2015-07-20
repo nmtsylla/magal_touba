@@ -1,0 +1,21 @@
+p.article{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    word-wrap: break-word;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+.content-wrapper{
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+}

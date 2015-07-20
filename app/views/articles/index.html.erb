@@ -22,16 +22,20 @@
 	<% @articles.each do |article| %>
 		<div class="col-sm-6 col-md-4 col-xs-12">
 			<div class="bs-component">
-				<%= image_tag 'magal.png', class:'img-responsive' %>
+				<%= image_tag(article.image_a_la_une(:medium), class:'img-responsive') %>
 				<h3><%= article.titre %></h3>
 				<p><%= article.contenu.truncate(300) %> <%= link_to 'Show more', article %></p>
+				<p><%= article.created_at %></p>
 			</div>
-			<%= link_to 'Edit', edit_article_path(article) %>
-			<%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% if current_user %>
+				<%= link_to 'Edit', edit_article_path(article) %>
+				<%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
 		</div>
 
 	<% end %>
 
-<%= link_to 'New Article', new_article_path %>
-
+	<% if current_user %>
+		<%= link_to 'New Article', new_article_path %>
+	<% end %>
 	</div>

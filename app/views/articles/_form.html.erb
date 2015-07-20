@@ -1,45 +1,36 @@
-<%= form_for(@article) do |f| %>
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+	<%= simple_form_for(@article) do |f| %>
+		<% if @article.errors.any? %>
+			<div id="error_explanation">
+				<h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
 
-      <ul>
-      <% @article.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+				<ul>
+				<% @article.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+				</ul>
+			</div>
+		<% end %>
 
-  <div class="field">
-    <%= f.label :titre %><br>
-    <%= f.text_field :titre %>
-  </div>
-  <div class="field">
-    <%= f.label :surtitre %><br>
-    <%= f.text_field :surtitre %>
-  </div>
-  <div class="field">
-    <%= f.label :soustitre %><br>
-    <%= f.text_field :soustitre %>
-  </div>
-  <div class="field">
-    <%= f.label :descriptif %><br>
-    <%= f.text_area :descriptif %>
-  </div>
-  <div class="field">
-    <%= f.label :contenu %><br>
-    <%= f.text_area :contenu %>
-  </div>
-  <div class="field">
-    <%= f.label :popularite %><br>
-    <%= f.text_field :popularite %>
-  </div>
-  <div class="field">
-    <%= f.label :rubrique_id %><br>
-    <%= f.text_field :rubrique_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+		<div class="field">
+			<%= f.input :image_a_la_une %>
+		</div>
+		<div class="field">
+			<%= f.input :titre %>
+		</div>
+		<div class="field">
+			<%= f.input :surtitre %>
+		</div>
+		<div class="field">
+			<%= f.input :soustitre %>
+		</div>
+		<div class="field">
+			<%= f.input :contenu %>
+		</div>
+
+		<div class="field">
+			<%= f.association :rubrique %>
+		</div>
+		<div class="actions">
+			<%= f.submit %>
+		</div>
+	<% end %>
