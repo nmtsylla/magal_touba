@@ -19,3 +19,7 @@ p.article{
     background-color: white;
     color: rgba(0,0,0,0.8);
 }
+
+.thumb{
+    height: 150px;
+}
