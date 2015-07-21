@@ -20,12 +20,32 @@
  ============================================================ */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+@import url('demo.css');
+@import url('font-awesome.css');
+/* GLOBALS */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 30px;
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+
+body {
+
+}
 .set-radius-zero {
     border-radius: 0px;
     -moz-border-radius: 0px;
@@ -96,12 +116,12 @@ header {
 
 .navbar-brand {
     width: 50px;
-    height: 50px;
+    height: 170px;
     padding-top: 0px;
 }
 #logoim {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 
 /* USER SETTINGS DIV */
@@ -138,7 +158,7 @@ header {
     .user-settings-wrapper img {
         height: 64px;
         width: 64px;
-        border: 1px solid #000000;
+        border: 1px solid ;
     }
 
     .user-settings-wrapper .dropdown-menu {
@@ -158,62 +178,128 @@ header {
         padding-top: 10px;
     }
 
-/* MENU LINKS SECTION*/
-.menu-section ul li ul{
-    display: none;
-    color: #FFF;
-    background-color:#26C281 ;
-    text-decoration: none;
-    padding: 0px ;
-    text-transform: uppercase;
-    visibility: hidden;
-}
-.menu-section ul li:hover ul {
-    display: block;
-    visibility: visible;
 
-}
 
-.menu-section ul li ul a:hover{
-    color: #000000;
-    background-color: #ffffff ;
-}
 
-#menu-top a {
-    color: #FFF;
-    background-color: #3D3D3D;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px 10px 10px 10px;
-    text-transform: uppercase;
-}
 
-.menu-top-active {
-    background-color: #03A678;
-}
-
-.menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
-    background-color: #26C281!important;
-}
-
-.menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
-    background-color: #26C281!important;
-}
 
 
 .navbar-inverse {
-    background-color: #ffffff;
-    border-color: transparent;
+    background-image: url("banniere.jpg");
+    border-color: #26C281;
+
 }
 
 .navbar-toggle {
-    background-color: #ffffff;
+    background-color: #26C281;
     border: 1px solid #fff;
 }
 
 .navbar {
     margin-bottom: 0px;
+
 }
+/* =============================================================
+   Nouveau Menu
+ ============================================================ */
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 15px;
+
+
+    /* Styles */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 0 #26C281;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+    padding: 0 10px ;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: none;
+}
+
+.wrapper-dropdown-5 .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover a {
+    color: #32cd32;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+    border-radius: 5px 5px 0 0;
+    background: #32cd32;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+    border-color: #32cd32 transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid #32cd32;
+    max-height: 400px;
+}
+
+/* No CSS3 support: none */
+
+
+
 /* =============================================================
    FOOTER SECTION STYLES
  ============================================================ */
