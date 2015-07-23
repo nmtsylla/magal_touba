@@ -178,13 +178,13 @@ header {
     padding-top: 10px;
 }
 
-/* MENU LINKS SECTION*/
+/* SUBMENU LINKS SECTION*/
 .menu-section ul li ul{
     display: none;
     color: #FFF;
     background-color:#26C281 ;
     text-decoration: none;
-    padding: 0px ;
+    padding: 10px ;
     text-transform: uppercase;
     visibility: hidden;
 }
@@ -199,6 +199,7 @@ header {
     background-color: #ffffff ;
 }
 
+/* MENU LINKS SECTION*/
 #menu-top a {
     color: #FFF;
     background-color: #3D3D3D;
