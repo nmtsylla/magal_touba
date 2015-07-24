@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require moment
-//= require moment/fr.js
+//= require twitter/bootstrap
+//= require turbolinks
+//= require modernizr.custom.79639
 //= require_tree .

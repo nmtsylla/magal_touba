@@ -20,12 +20,32 @@
  ============================================================ */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+@import url('demo.css');
+@import url('font-awesome.css');
+/* GLOBALS */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 30px;
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
+
+body {
+
+}
 .set-radius-zero {
     border-radius: 0px;
     -moz-border-radius: 0px;
@@ -96,12 +116,12 @@ header {
 
 .navbar-brand {
     width: 50px;
-    height: 50px;
+    height: 170px;
     padding-top: 0px;
 }
 #logoim {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 
 /* USER SETTINGS DIV */
@@ -121,50 +141,50 @@ header {
     margin-top: 10px;
 }
 
-    .user-settings-wrapper li {
-        display: inline-block;
-    }
+.user-settings-wrapper li {
+    display: inline-block;
+}
 
-    .user-settings-wrapper .dropdown-settings {
-        width: 200px;
-        padding: 10px;
-    }
+.user-settings-wrapper .dropdown-settings {
+    width: 200px;
+    padding: 10px;
+}
 
-    .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
-        text-decoration: none;
-        background-color: #3FC380!important;
-    }
+.user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #3FC380!important;
+}
 
-    .user-settings-wrapper img {
-        height: 64px;
-        width: 64px;
-        border: 1px solid #000000;
-    }
+.user-settings-wrapper img {
+    height: 64px;
+    width: 64px;
+    border: 1px solid #000000;
+}
 
-    .user-settings-wrapper .dropdown-menu {
-        margin: 0px;
-        border-radius: 0px!important;
-        -moz-border-radius: 0px!important;
-        -webkit-border-radius: 0px!important;
-    }
+.user-settings-wrapper .dropdown-menu {
+    margin: 0px;
+    border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+}
 
-    .user-settings-wrapper .btn {
-        border-radius: 0px!important;
-        -moz-border-radius: 0px!important;
-        -webkit-border-radius: 0px!important;
-    }
+.user-settings-wrapper .btn {
+    border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+}
 
-    .user-settings-wrapper .media-heading {
-        padding-top: 10px;
-    }
+.user-settings-wrapper .media-heading {
+    padding-top: 10px;
+}
 
-/* MENU LINKS SECTION*/
+/* SUBMENU LINKS SECTION*/
 .menu-section ul li ul{
     display: none;
     color: #FFF;
     background-color:#26C281 ;
     text-decoration: none;
-    padding: 0px ;
+    padding: 10px ;
     text-transform: uppercase;
     visibility: hidden;
 }
@@ -179,6 +199,7 @@ header {
     background-color: #ffffff ;
 }
 
+/* MENU LINKS SECTION*/
 #menu-top a {
     color: #FFF;
     background-color: #3D3D3D;
@@ -202,8 +223,8 @@ header {
 
 
 .navbar-inverse {
-    background-color: #ffffff;
-    border-color: transparent;
+    background-image: url("banniere.jpg");
+    border-color: #03A678;
 }
 
 .navbar-toggle {
