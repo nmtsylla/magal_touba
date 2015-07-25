@@ -15,9 +15,13 @@ a {
 	text-decoration: none;
 }
 
-.container {
+.menu-section > .container {
 	width: 100%;
 	position: relative;
+}
+
+#menu_haut{
+    background-color: #3D3D3D;
 }
 
 .clr {
@@ -121,7 +125,7 @@ a {
 	margin: 0px 4px;
 	padding: 0px 6px;
 	color: #aaa;
-	line-height: 20px;	
+	line-height: 20px;
 	font-size: 12px;
 	font-weight: 700;
 	text-shadow: 1px 1px 1px #fff;

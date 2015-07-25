@@ -224,7 +224,7 @@ header {
 
 .navbar-inverse {
     background-image: url("banniere.jpg");
-    border-color: #03A678;
+    border-bottom-color: #03A678;
 }
 
 .navbar-toggle {
