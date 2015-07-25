@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
 //= require modernizr.custom.79639
+//= require owl.carousel
+//= require custom
 //= require_tree .
