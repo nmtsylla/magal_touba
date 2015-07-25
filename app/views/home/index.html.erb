@@ -2,12 +2,10 @@
     <div class="row">
         <div class="col-md-12">
             <h4 class="page-head-line">Acceuil</h4>
-
         </div>
-
     </div>
 
-
+    <div class="row">
         <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 ">
             <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
                 <i class="fa fa-venus dashboard-div-icon" ></i>
@@ -18,53 +16,52 @@
                 <h5>A la Une </h5>
             </div>
         </div>
+    </div>
 
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-          <i class="fa fa-venus dashboard-div-icon" ></i>
-          <div class="progress progress-striped active">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
+              <i class="fa fa-venus dashboard-div-icon" ></i>
+              <h5>Dossiers & Reportages</h5>
             </div>
-          </div>
-          <h5>Mouride  de la semaine </h5>
-
         </div>
-      </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-          <i class="fa fa-venus dashboard-div-icon" ></i>
-          <div class="progress progress-striped active">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-            </div>
-          </div>
-          <h5>Dossiers & Reportages</h5>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="text-center">Fil d'actu</h3>
+            <ul id="nt-example1" class="newsticker">
+                <li>Etiam imperdiet volutpat libero eu tristique. <a href="#">Read more...</a></li>
+                <li>Curabitur porttitor ante eget hendrerit adipiscing. <a href="#">Read more...</a></li>
+                <li>Praesent ornare nisl lorem, ut condimentum lectus gravida ut. <a href="#">Read more...</a></li>
+                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
+                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
+                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
+                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
+            </ul>
         </div>
-      </div>
-      <div >
-        <%= render 'left_part' %>
-      </div>
+    </div>
 
-      <div class="col-md-12">
+
         <div class="col-md-8 col-sm-12 col-xs-12">
           <div class="videoWrapper">
             <iframe width="660" height="515" src="https://www.youtube.com/embed/Xmc_VAoGHBM?list=PLUw-0N-Li1kWn9bP31mN_x8YeTOE6wyZn" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-      </div>
-
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-          <i class="fa fa-venus dashboard-div-icon" ></i>
-          <div class="progress progress-striped active">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-            </div>
-          </div>
-          <h5>Témoignages</h5>
+        <div >
+          <%= render 'left_part' %>
         </div>
-      </div>
+
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
+            <i class="fa fa-venus dashboard-div-icon" ></i>
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                </div>
+            </div>
+            <h5>Témoignages</h5>
+        </div>
+    </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
           <i class="fa fa-venus dashboard-div-icon" ></i>
@@ -75,18 +72,30 @@
           <h5>Sagesse</h5>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-          <i class="fa fa-venus dashboard-div-icon" ></i>
-          <div class="progress progress-striped active">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-            </div>
-          </div>
-          <h5>Sagesse</h5>
-        </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+        <h3>Mouride  de la semaine </h3>
+        <%= image_tag('http://magal-touba.org/magal/IMG/arton941.jpg', class: 'center-block') %>
+        <h5>SERIGNE DAME ABDOURAHMANE LO : le Grand Maître, une des grandes figures du Mouridisme.</h5>
+        <p>Serigne Cheikh Abdourahmane LO, un des fidèles copagnons de Cheikh Ahmadou Bamba, faisait partie de cette génération qui reçut du Cheikh lui-même une éducation pratique, une formation mystique ainsi que les fondements essentiels de sa nouvelle voie : le Mouridisme.</p>
       </div>
+
+
+  <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $('.newsticker').newsTicker({
+              row_height: 65,
+              max_rows: 5,
+              speed: 600,
+              direction: 'up',
+              duration: 4000,
+              autostart: 1,
+              pauseOnHover: 0
+          });
+      });
+  </script>
 
 
 
 
 </div>
+

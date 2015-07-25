@@ -58,7 +58,6 @@ end
 gem 'paperclip', '~> 4.2.1'
 gem 'momentjs-rails'
 gem 'font-awesome-rails'
-gem 'owlcarousel-rails'
 
 group :staging, :production do
   gem 'rails_12factor'

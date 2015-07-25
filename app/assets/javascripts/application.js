@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr.custom.79639
-//= require owl.carousel
 //= require custom
 //= require_tree .
