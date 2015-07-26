@@ -30,13 +30,9 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <h3 class="text-center">Fil d'actu</h3>
             <ul id="nt-example1" class="newsticker">
-                <li>Etiam imperdiet volutpat libero eu tristique. <a href="#">Read more...</a></li>
-                <li>Curabitur porttitor ante eget hendrerit adipiscing. <a href="#">Read more...</a></li>
-                <li>Praesent ornare nisl lorem, ut condimentum lectus gravida ut. <a href="#">Read more...</a></li>
-                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
-                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
-                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
-                <li>Nunc ultrices tortor eu massa placerat posuere. <a href="#">Read more...</a></li>
+                <% @info_continu.each do |info| %>
+                    <li><%= info.titre %> <%= link_to info, 'Read more' %> </li>
+                <% end %>
             </ul>
         </div>
     </div>
