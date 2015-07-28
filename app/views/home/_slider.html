@@ -1,0 +1,15 @@
+<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 ">
+    <section id="news-demo">
+        <%= @a_la_une.each do |slide| %>
+        <article>
+            <div class="text-content">
+                <h2><%= slide.titre %></h2>
+                <p><%= slide.contenu.truncate(200) %></p>
+                <%= link_to 'read more', slide, class: 'button-link read-more'%>
+            </div>
+            <div class="image-content"><%= image_tag('http://placehold.it/750x350') %></div>
+        </article>
+        <% end %>
+    </section>
+    <%= link_to 'Afficher tous', articles_path, class: 'button-link read-more'%>
+</div>
