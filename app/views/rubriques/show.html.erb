@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <p><h2>Article de la rubrique <%= @rubrique.titre.humanize %></h2></p>
+  <div class="container">
 
-<p>
-  <strong>Titre:</strong>
-  <%= @rubrique.titre %>
-</p>
+    <% @rubrique.articles.each do |article| %>
+        <div class="col-sm-6 col-md-4 col-xs-12">
+          <div class="bs-component">
+            <div><%= image_tag(article.image_a_la_une(:medium), class:'thumb img-responsive', ) %></div>
+            <h3><%= article.titre %></h3>
+            <p><%= link_to 'Show more', article %></p>
+            <p><%= article.created_at %></p>
+          </div>
+          <% if current_user %>
+              <%= link_to 'Edit', edit_article_path(article) %>
+              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+        </div>
 
-<p>
-  <strong>Descriptif:</strong>
-  <%= @rubrique.descriptif %>
-</p>
+    <% end %>
+  </div>
 
-<p>
-  <strong>Status:</strong>
-  <%= @rubrique.status %>
-</p>
-
-<%= link_to 'Edit', edit_rubrique_path(@rubrique) %> |
-<%= link_to 'Back', rubriques_path %>
+</div>
