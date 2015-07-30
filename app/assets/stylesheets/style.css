@@ -61,9 +61,9 @@ body {
 .page-head-line {
     font-weight: 900;
     padding-bottom: 20px;
-    border-bottom: 2px solid #26C281;
+    border-bottom: 2px solid #55C3A0;
     text-transform: uppercase;
-    color: #26C281;
+    color: #55C3A0;
     font-size: 20px;
     margin-bottom: 40px;
 }
@@ -90,7 +90,7 @@ margin-bottom: 20px;
 color: #fff;
 text-align: center;
 cursor:pointer;
-background-color:#26C281;
+background-color:#55C3A0;
 -webkit-border-radius:50%;
     -moz-border-radius:50%;
 }
@@ -98,7 +98,7 @@ background-color:#26C281;
    HEADER SECTION STYLES
  ============================================================ */
 header {
-    background-color: #3FC380;
+    background-color: #55C3A0;
     color: #fff;
     /*padding: 10px;*/
     text-align: right;
@@ -152,7 +152,7 @@ header {
 
 .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
     text-decoration: none;
-    background-color: #3FC380!important;
+    background-color: #55C3A0!important;
 }
 
 .user-settings-wrapper img {
@@ -182,7 +182,7 @@ header {
 .menu-section ul li ul{
     display: none;
     color: #FFF;
-    background-color:#26C281 ;
+    background-color:#55C3A0 ;
     text-decoration: none;
     padding: 10px ;
     text-transform: uppercase;
@@ -210,21 +210,21 @@ header {
 }
 
 .menu-top-active {
-    background-color: #03A678;
+    background-color: #55C3A0;
 }
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
-    background-color: #26C281!important;
+    background-color: #55C3A0!important;
 }
 
 .menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
-    background-color: #26C281!important;
+    background-color: #55C3A0!important;
 }
 
 
 .navbar-inverse {
     background-image: url("banniere.jpg");
-    border-bottom-color: #03A678;
+    border-bottom-color: #55C3A0;
 }
 
 .navbar-toggle {
@@ -242,7 +242,7 @@ footer {
     padding: 10px;
     color: #fff;
     font-size: 12px;
-    background-color: #03A678;
+    background-color: #55C3A0;
 }
 
     footer a, footer a:hover {
@@ -265,7 +265,7 @@ footer {
 }
 
 .bk-clr-three {
-    background-color: #119c7e;
+    background-color: #55C3A0;
 }
 
 .bk-clr-four {

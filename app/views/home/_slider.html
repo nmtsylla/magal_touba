@@ -5,11 +5,13 @@
             <div class="text-content">
                 <h2><%= slide.titre %></h2>
                 <p><%= slide.contenu.truncate(200) %></p>
-                <%= link_to 'read more', slide, class: 'button-link read-more'%>
+                <%= link_to 'read more', slide, class: 'button-link read-more btn btn-primary btn-lg'%>
             </div>
             <div class="image-content"><%= image_tag('http://placehold.it/750x350') %></div>
         </article>
         <% end %>
     </section>
-    <%= link_to 'Afficher tous', articles_path, class: 'button-link read-more'%>
+    <div>
+    <%= link_to 'Afficher tous', articles_path, class: 'button-link read-more btn btn-primary btn-lg'%>
+    </div>
 </div>
