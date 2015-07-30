@@ -32,4 +32,14 @@ $(function(){
         // slideshow
         autoDirection: 'prev'
     });
+
+
+   /* $('.redactor').redactor(
+        { "plugins": ['fontsize',
+            'fontcolor',
+            'fontfamily',
+            'fullscreen',
+            'textdirection',
+            'clips']
+        });*/
 });

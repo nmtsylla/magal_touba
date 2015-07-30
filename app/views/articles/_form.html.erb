@@ -24,8 +24,8 @@
 			<%= f.input :soustitre %>
 		</div>
 		<div class="field">
-			<%= f.input :contenu %>
-		</div>
+          <%= text_area_tag :contenu, "", :class => "redactor", :rows => 40, :cols => 120 %>
+        </div>
 
 		<div class="field">
 			<%= f.association :rubrique %>
@@ -34,3 +34,5 @@
 			<%= f.submit %>
 		</div>
 	<% end %>
+
+
