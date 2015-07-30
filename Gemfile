@@ -9,13 +9,11 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'email_validator'
 
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'therubyracer',  platforms: :ruby
 gem "devise", '~> 3.4.1'
 
-gem 'rack-timeout'
 gem 'recipient_interceptor'
 gem 'simple_form', '~> 3.1.0.rc2', github: 'plataformatec/simple_form', branch: 'master'
 gem 'title'
@@ -68,3 +66,7 @@ group :staging, :production do
   gem 'rails_12factor'
   gem 'newrelic_rpm', '>= 3.7.3'
 end
+
+
+
+ruby '2.2.2'
