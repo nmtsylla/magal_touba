@@ -6,7 +6,13 @@
     <% @rubrique.articles.each do |article| %>
         <div class="col-sm-6 col-md-4 col-xs-12">
           <div class="bs-component">
-            <div><%= image_tag(article.image_a_la_une(:medium), class:'thumb img-responsive', ) %></div>
+            <div>
+              <% if article.image_a_la_une_file_name %>
+                <%= image_tag(article.image_a_la_une(:medium), class:'thumb img-responsive', ) %>
+              <% else %>
+                  <img src="http://placehold.it/300x150" alt="">
+              <% end %>
+              </div>
             <h3><%= article.titre %></h3>
             <p><%= link_to 'Show more', article %></p>
             <p><%= article.created_at %></p>
