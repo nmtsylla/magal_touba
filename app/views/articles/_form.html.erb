@@ -24,11 +24,11 @@
 			<%= f.input :soustitre %>
 		</div>
 		<div class="field">
-          <%= text_area_tag :contenu, "", :class => "redactor", :rows => 40, :cols => 120 %>
+          <%= cktext_area :article, :contenu, :cols => 40, :ckeditor => {:uiColor => '#55C3A0', :toolbar => 'full'} %>
         </div>
 
 		<div class="field">
-			<%= f.association :rubrique %>
+			<%= f.association :rubrique, label_method: :titre, prompt: "Choisissez une rubrique" %>
 		</div>
 		<div class="actions">
 			<%= f.submit %>

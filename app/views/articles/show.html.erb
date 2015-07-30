@@ -10,22 +10,22 @@
 		<hr>
 
 		<!-- Date/Time -->
-		<p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
 
 		<hr>
 
 		<!-- Preview Image -->
 		<%= image_tag(@article.image_a_la_une, :class => "img-responsive") %>
-
 		<hr>
 
 		<!-- Post Content -->
-		<p class="article"><%= @article.contenu %></p>
+		<p class="article"><%= @article.contenu.html_safe %></p>
 		<br/>
 		<!-- Author -->
 		<p class="">
-			by <a href="#">Author's name</a>
+			by <a href="#">Author's name</a>, <%= @article.rubrique.titre.humanize %>
 		</p>
+      <p><span class="glyphicon glyphicon-time"></span> Posted on <%=l @article.created_at %></p>
 
 		<% if current_user %>
 			<%= link_to 'Edit', edit_article_path(@article) %> |

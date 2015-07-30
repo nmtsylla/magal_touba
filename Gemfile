@@ -58,9 +58,11 @@ end
 gem 'paperclip', '~> 4.2.1'
 gem 'momentjs-rails'
 gem 'font-awesome-rails'
-gem 'redactor-rails'
-gem "carrierwave"
-gem "mini_magick"
+#gem 'redactor-rails'
+#gem "carrierwave"
+#gem "mini_magick"
+
+gem 'ckeditor'
 
 group :staging, :production do
   gem 'rails_12factor'

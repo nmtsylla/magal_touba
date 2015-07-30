@@ -14,5 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require modernizr.custom.79639
+//= require ckeditor/init
+//= require moment
+//= require moment/fr.js
 //= require custom
 //= require_tree .
