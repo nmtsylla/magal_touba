@@ -2,6 +2,10 @@
  * Created by nmtsylla on 7/25/15.
  */
 $(function(){
+
+    var now = moment();
+
+
     $('.newsticker').newsTicker({
         row_height: 65,
         max_rows: 5,
@@ -30,8 +34,10 @@ $(function(){
         pause: 8000,
 
         // slideshow
-        autoDirection: 'prev'
+        autoDirection: 'next'
     });
+
+    $(".news-pager").append('<a class="button-link read-more btn btn-primary" href="/articles">Afficher tous les articles</a>');
 
 
    /* $('.redactor').redactor(

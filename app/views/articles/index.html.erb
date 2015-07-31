@@ -30,8 +30,8 @@
                   <% end %>
                 </div>
 				<h3><%= article.titre %></h3>
-				<p><%= link_to 'Show more', article %></p>
-				<p><%= article.created_at %></p>
+				<p><%= link_to 'Lire...', article %></p>
+				<span class="time_display"><%= article.created_at %></span>
 			</div>
 			<% if current_user %>
 				<%= link_to 'Edit', edit_article_path(article) %>
@@ -46,3 +46,11 @@
 		<%= link_to 'New Article', new_article_path %>
 	<% end %>
 	</div>
+
+<script>
+  $(function(){
+      $('.time_display').each(function() {
+          this.textContent = moment(this.textContent).fromNow();
+      });
+  });
+</script>
