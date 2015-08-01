@@ -22,8 +22,12 @@ a {
 
 #menu_haut{
     background-color: #3D3D3D;
+
 }
 
+#menu-top {
+    margin: auto 0;
+}
 .clr {
 	clear: both;
 	padding: 0;
