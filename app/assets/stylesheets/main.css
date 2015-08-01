@@ -23,6 +23,7 @@
 }
 
 #nt-title {
+
 }
 
 #nt-title li {
@@ -65,13 +66,16 @@
 	color: #4e4e4e;
 	background: #F2F2F2;
 	overflow: hidden;
-	height: 80px;
+	height: auto;
 	padding: 10px;
 	line-height: 28px;
 	list-style: none;
-	font-size: 24px;
+	font-size: 14px;
 	text-align: left;
 	border-bottom: 1px dotted #2c8162;
+}
+#nt-example1 li:hover {
+    color: #4e4e4e;
 }
 
 #nt-example1 li:hover {
