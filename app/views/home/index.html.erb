@@ -11,21 +11,14 @@
 
 
     <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-            <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-              <i class="fa fa-venus dashboard-div-icon" ></i>
-              <h5>Dossiers & Reportages</h5>
+        <div class="col-md-8 col-sm-6 col-xs-12 " width="660" height="515" >
+            <div class=" " id="#">
+              <h4 style="text-align: center"><%= @dossier.titre %></h4>
+              <p style="text-align: center"><%= @dossier.contenu.html_safe %></p>
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3 class="text-center">Fil d'actualités</h3>
-            <ul id="nt-example1" class="newsticker">
-                <% @info_continu.each do |info| %>
-                    <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
-                <% end %>
-            </ul>
-        </div>
+        <%= render 'fil_dactu' %>
     </div>
 
 
@@ -50,92 +43,37 @@
         </div>
     </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-          <i class="fa fa-venus dashboard-div-icon" ></i>
-          <div class="progress progress-striped active">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-            </div>
-          </div>
-          <h5>Sagesse</h5>
-        </div>
+        <%= render 'sagesse' %>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-        <h3>Mouride  de la semaine </h3>
-        <%= image_tag('http://magal-touba.org/magal/IMG/arton941.jpg', class: 'center-block') %>
-        <h5>SERIGNE DAME ABDOURAHMANE LO : le Grand Maître, une des grandes figures du Mouridisme.</h5>
-        <p>Serigne Cheikh Abdourahmane LO, un des fidèles copagnons de Cheikh Ahmadou Bamba, faisait partie de cette génération qui reçut du Cheikh lui-même une éducation pratique, une formation mystique ainsi que les fondements essentiels de sa nouvelle voie : le Mouridisme.</p>
-      </div>
+      <%= render 'mouride_de_la_semaine' %>
 
 
 
   <div class="row">
     <div class="col-md-8">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          Utile à savoir
-        </div>
+        <h2 style="text-align: center">Utile à savoir</h2>
         <div class="panel-body">
           <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">Collapsible Group Item #1</a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <% @a_savoir.each do |savoir|  %>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= savoir.id %>" class="collapsed"><%= savoir.titre %></a>
+                    </h4>
+                  </div>
+                  <div id="collapse<%= savoir.id %>" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                      <%= savoir.surtitre %>
+                      <%= savoir.contenu.html_safe %>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
-                <div class="panel-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">Collapsible Group Item #3</a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-              </div>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-4">
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          Publicite
-        </div>
-        <div class="panel-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-        </div>
-        <div class="panel-footer">
-          Panel Footer
-        </div>
-      </div>
-    </div>
+    <%= render 'pub' %>
   </div>
-
-  <script type="text/javascript" charset="utf-8">
-
-  </script>
-
-
 
 
 </div>

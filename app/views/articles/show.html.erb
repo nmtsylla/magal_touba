@@ -7,19 +7,15 @@
 		<h1><%= @article.titre %></h1>
 
 
-		<hr>
-
-		<!-- Date/Time -->
-
-
-		<hr>
 
 		<!-- Preview Image -->
 		<%= image_tag(@article.image_a_la_une, :class => "img-responsive") %>
 		<hr>
 
 		<!-- Post Content -->
-		<p class="article"><%= @article.contenu.html_safe %></p>
+		<p class="article">
+          <%= @article.surtitre %>
+          <%= @article.contenu.html_safe %></p>
 		<br/>
 		<!-- Author -->
 		<p class="">

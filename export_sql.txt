@@ -2,6 +2,6 @@ mysqldump -u serignetouba1 -h 208.91.198.197 -p --opt --where="1 limit 20" ahmad
 
 create table tmp_article(titre varchar(50), surtitre varchar(50), soustitre varchar(50), descriptif text, contenu text, popularite float, rubrique_id integer, created datetime, updated_at datetime);
 
-insert into tmp_article(titre, surtitre, soustitre, descriptif, contenu, rubrique_id, popularite) (select titre, surtitre, soustitre , descriptif, texte, id_rubrique, popularite from spip_articles) ;
+insert into articles(titre, surtitre, contenu, rubrique_id, popularite, view_count) (select titre, chapo, texte, id_rubrique, popularite, vue from spip_articles) ;
 
 mysql -u serignetouba1  -h 208.91.198.197 -p
