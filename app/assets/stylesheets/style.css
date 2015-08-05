@@ -296,6 +296,16 @@ footer {
 .actuprincip{
     height: 390px;
 }
+.actusec{
+    height: 316px;
+}
+.actuter{
+    height: 150px;
+}
+.actuq{
+    height: 780px;
+}
+
 
     .dashboard-div-wrapper .progress {
         height: 2px;

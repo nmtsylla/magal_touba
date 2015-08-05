@@ -1,0 +1,8 @@
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <h3 class="text-center">Contributions & Témoignages </h3>
+  <ul id="nt-example1" class="newsticker">
+    <% @info_continu.each do |info| %>
+        <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
+    <% end %>
+  </ul>
+</div>

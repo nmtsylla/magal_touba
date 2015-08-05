@@ -1,4 +1,5 @@
 <div class="container">
+
     <div class="row">
         <div class="col-md-12">
             <h4 class="page-head-line">Acceuil</h4>
@@ -8,7 +9,7 @@
     <div class="row">
         <%= render 'home/slider' %>
     </div>
-
+    <br/>
 
     <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12 " width="660" height="515" >
@@ -20,8 +21,8 @@
 
         <%= render 'fil_dactu' %>
     </div>
-
-
+    <br/><br/>
+  <div class="row">
         <div class="col-md-8 col-sm-12 col-xs-12">
           <div class="videoWrapper">
             <iframe width="660" height="515" src="https://www.youtube.com/embed/Xmc_VAoGHBM?list=PLUw-0N-Li1kWn9bP31mN_x8YeTOE6wyZn" frameborder="0" allowfullscreen></iframe>
@@ -30,8 +31,10 @@
         <div >
           <%= render 'left_part' %>
         </div>
+    </div>
+  <br/><br/>
 
-
+    <div class="row">
     <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
             <i class="fa fa-venus dashboard-div-icon" ></i>
@@ -46,35 +49,153 @@
         <%= render 'sagesse' %>
       </div>
       <%= render 'mouride_de_la_semaine' %>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
+          <i class="fa fa-venus dashboard-div-icon" ></i>
+          <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            </div>
+          </div>
+          <h5>Infos</h5>
+        </div>
+      </div>
+
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
+        <i class="fa fa-venus dashboard-div-icon" ></i>
+        <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          </div>
+        </div>
+        <h5>Top Annonces</h5>
+      </div>
+    </div>
+
+    <%= render 'contrib_tem' %>
+
+    </div>
+
+  <div class="row">
+
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <div class="dashboard-div-wrapper bk-clr-one actuq" id="#">
+
+          <h5>Top Vidéos</h5>
+          <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos1
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos2
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos3
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos4
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 r">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos5
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos6
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos7
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 r">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos8
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ">
+            <div class="dashboard-div-wrapper bk-clr-two actuter" id="#">
+
+              Vidéos9
+            </div>
+          </div>
+
+          <%= link_to 'Plus de vidéos', class: 'button-link read-more btn btn-primary btn-lg'%>
+        </div>
+      </div>
+
+    <%= render 'photo' %>
+    <%= render 'pub' %>
+  </div>
+
+  <div class="row">
+
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <div class="dashboard-div-wrapper bk-clr-one actusec" id="#">
+          <h5>Bannières évenements</h5>
+        </div>
+      </div>
+    <%= render 'decouverte' %>
+
+  </div>
 
 
 
   <div class="row">
     <div class="col-md-8">
-        <h2 style="text-align: center">Utile à savoir</h2>
-        <div class="panel-body">
-          <div class="panel-group" id="accordion">
-            <% @a_savoir.each do |savoir|  %>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= savoir.id %>" class="collapsed"><%= savoir.titre %></a>
-                    </h4>
-                  </div>
-                  <div id="collapse<%= savoir.id %>" class="panel-collapse collapse" style="height: 0px;">
-                    <div class="panel-body">
-                      <%= savoir.surtitre %>
-                      <%= savoir.contenu.html_safe %>
-                    </div>
+    <h2 style="text-align: center">Bon à savoir</h2>
+      <div class="panel-body">
+        <div class="panel-group" id="accordion">
+          <% @a_savoir.each do |savoir|  %>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= savoir.id %>" class="collapsed"><%= savoir.titre %></a>
+                  </h4>
+                </div>
+                <div id="collapse<%= savoir.id %>" class="panel-collapse collapse" style="height: 0px;">
+                  <div class="panel-body">
+                    <%= savoir.surtitre %>
+                    <%= savoir.contenu.html_safe %>
                   </div>
                 </div>
-            <% end %>
-          </div>
+              </div>
+          <% end %>
         </div>
       </div>
-    <%= render 'pub' %>
-  </div>
+    </div>
+    <%= render 'num_utile' %>
+    </div>
+
+
+
+
 
 
 </div>
-
