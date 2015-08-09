@@ -123,6 +123,13 @@ header {
     width: 175px;
     height: 175px;
 }
+#minim {
+    width: 45px;
+    height: 45px;
+    float: right;
+
+}
+
 
 /* USER SETTINGS DIV */
 .user-settings-wrapper .nav > li > a {
@@ -305,7 +312,18 @@ footer {
 .actuq{
     height: 780px;
 }
+.sagesse{
+    border-top: solid;
 
+    border-top-radius: 5% 5%;
+    border-top-color: #55C3A0;
+
+}
+.headrubrique{
+    background-color: #55C3A0;
+    color: #ffffff;
+
+}
 
     .dashboard-div-wrapper .progress {
         height: 2px;

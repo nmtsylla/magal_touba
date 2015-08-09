@@ -1,5 +1,8 @@
-<div class="sagesse actuprincip" id="#">
-  <h4 style="text-align: center">Sagesse</h4>
-  <h4><%= link_to @sagess.titre, @sagess %></h4>
-  <p style="text-align: justify"><%= @sagess.surtitre %></p>
-</div>
+
+
+  <h3 class="text-center headrubrique">Sagesse</h3>
+  <ul id="nt-example1" class="newsticker">
+    <% @sagess.each do |sagesse| %>
+        <li><%= image_tag 'magal.png' , :id =>'minim',:class=>'text-center'%><br/><%= sagesse.titre %> <%= link_to 'Lire', sagesse %> </li>
+    <% end %>
+  </ul>
