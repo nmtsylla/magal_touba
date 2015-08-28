@@ -17,4 +17,5 @@
 //= require moment
 //= require moment/fr.js
 //= require custom
+//= require bindWithDelay
 //= require_tree .

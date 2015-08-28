@@ -7,4 +7,5 @@ class Article < ActiveRecord::Base
   belongs_to :rubrique
   extend FriendlyId
   friendly_id :titre, use:  [:slugged, :finders]
+  self.per_page = 15
 end
