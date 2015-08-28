@@ -114,3 +114,18 @@ p.article{
    width: 60%;
     float: right;
 }
+
+.panel-info{
+
+}
+.panel-info > .panel-heading {
+    color: #fff;
+    background-color: #55C3A0;
+
+}
+
+.panel-info > .panel-body {
+    color: #fff;
+    background-color: #777;
+
+}
