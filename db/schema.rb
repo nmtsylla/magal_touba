@@ -91,48 +91,6 @@ ActiveRecord::Schema.define(version: 20150730161542) do
 
   add_index "rubriques", ["slug"], name: "index_rubriques_on_slug", unique: true, using: :btree
 
-  create_table "spip_articles", primary_key: "id_article", force: :cascade do |t|
-    t.text     "surtitre",                                   null: false
-    t.text     "titre",                                      null: false
-    t.text     "soustitre",                                  null: false
-    t.integer  "id_rubrique"
-    t.text     "descriptif",                                 null: false
-    t.text     "chapo",                                      null: false
-    t.text     "texte",                                      null: false
-    t.text     "ps",                                         null: false
-    t.datetime "date"
-    t.string   "statut",         limit: 10,  default: "0",   null: false
-    t.integer  "id_secteur",                 default: 0,     null: false
-    t.datetime "maj"
-    t.string   "export",         limit: 10,  default: "oui"
-    t.datetime "date_redac"
-    t.integer  "visites",                    default: 0,     null: false
-    t.integer  "referers",                   default: 0,     null: false
-    t.float    "popularite"
-    t.string   "accepter_forum", limit: 3,   default: "",    null: false
-    t.datetime "date_modif"
-    t.string   "lang",           limit: 10,  default: "",    null: false
-    t.string   "langue_choisie", limit: 3,   default: "non"
-    t.integer  "id_trad",                    default: 0,     null: false
-    t.text     "extra"
-    t.integer  "id_version"
-    t.text     "nom_site",                                   null: false
-    t.string   "url_site",       limit: 255, default: "",    null: false
-    t.string   "virtuel",        limit: 255, default: "",    null: false
-  end
-
-  create_table "tmp_article", id: false, force: :cascade do |t|
-    t.string   "titre",       limit: 50
-    t.string   "surtitre",    limit: 50
-    t.string   "soustitre",   limit: 50
-    t.text     "descriptif"
-    t.text     "contenu"
-    t.float    "popularite"
-    t.integer  "rubrique_id"
-    t.datetime "created"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false

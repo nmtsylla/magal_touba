@@ -4,7 +4,7 @@
         <article>
             <div class="text-content">
                 <h2><%= slide.titre %></h2>
-                <p><%= slide.surtitre.truncate(300) %></p>
+                <p class="text"><%= slide.surtitre.truncate(500) %></p>
                 <%= link_to 'read more', slide, class: 'button-link read-more btn btn-primary btn-lg'%>
             </div>
             <div class="image-content"><%= image_tag('http://placehold.it/750x350') %></div>

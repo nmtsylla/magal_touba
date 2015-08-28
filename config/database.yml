@@ -6,7 +6,7 @@ default: &default
 development:
   <<: *default
   username: postgres
-  password: codxicoman
+  password: passer
   database: ahmdou_db
   host: localhost
       
