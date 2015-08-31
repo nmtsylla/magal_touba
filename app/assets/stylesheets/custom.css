@@ -129,3 +129,37 @@ p.article{
     background-color: #777;
 
 }
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+
+div#sliderr { overflow: hidden; }
+div#sliderr ul li { width: 20%; float: left; }
+div#sliderr ul {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+.transition {
+    transition: all .35s ease-in-out;
+    /* -webkit-transition: all .35s ease-in-out; */
+    -o-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -ms-transition: all .35s ease-in-out;
+}

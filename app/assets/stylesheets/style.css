@@ -218,10 +218,12 @@ header {
 
 .menu-top-active {
     background-color: #55C3A0;
+
 }
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
     background-color: #55C3A0!important;
+    transition: 0.3s all ease;
 }
 
 .menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
@@ -322,7 +324,7 @@ footer {
 .headrubrique{
     background-color: #55C3A0;
     color: #ffffff;
-
+    margin-bottom: 0;
 }
 
     .dashboard-div-wrapper .progress {
@@ -385,4 +387,9 @@ footer {
 
 .btn-google {
     background-color: #c32f10;
+}
+
+
+.button-link{
+    border-radius: 3px;
 }

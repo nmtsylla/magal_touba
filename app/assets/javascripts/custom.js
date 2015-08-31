@@ -5,10 +5,26 @@ $(function(){
 
     var now = moment();
 
+    $(function(){
+        $().timelinr({
+            autoPlay: 'false',
+            autoPlayDirection: 'forward'
+        })
+    });
 
     $('.newsticker').newsTicker({
         row_height: 65,
         max_rows: 5,
+        speed: 600,
+        direction: 'up',
+        duration: 4000,
+        autostart: 1,
+        pauseOnHover: 0
+    });
+
+    $('.sagesse-news').newsTicker({
+        row_height: 365,
+        max_rows: 1,
         speed: 600,
         direction: 'up',
         duration: 4000,

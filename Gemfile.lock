@@ -56,6 +56,7 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    betterlorem (0.1.2)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-will_paginate (0.0.10)
@@ -321,6 +322,7 @@ DEPENDENCIES
   autoprefixer-rails
   awesome_print
   better_errors
+  betterlorem
   binding_of_caller
   bootstrap-will_paginate (~> 0.0.10)
   ckeditor

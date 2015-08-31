@@ -1,4 +1,4 @@
-<%= form_for(@evenement) do |f| %>
+<%= simple_form_for(@evenement) do |f| %>
   <% if @evenement.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@evenement.errors.count, "error") %> prohibited this evenement from being saved:</h2>
@@ -11,29 +11,29 @@
     </div>
   <% end %>
 
+    <div class="field">
+        <%= f.input :image, as: :file %>
+    </div>
   <div class="field">
-    <%= f.label :titre %><br>
-    <%= f.text_field :titre %>
+    <%= f.input :titre %>
+  </div>
+    <div class="field">
+      <%= f.input :date %>
+    </div>
+  <div class="field">
+    <%= cktext_area :evenement, :descriptif, :cols => 40, :ckeditor => {:uiColor => '#55C3A0', :toolbar => 'full'} %>
   </div>
   <div class="field">
-    <%= f.label :descriptif %><br>
-    <%= f.text_field :descriptif %>
+    <%= f.input :status %>
   </div>
   <div class="field">
-    <%= f.label :status %><br>
-    <%= f.number_field :status %>
+    <%= f.input :lieu %>
   </div>
   <div class="field">
-    <%= f.label :lieu %><br>
-    <%= f.text_field :lieu %>
+    <%= f.input :latitude %>
   </div>
   <div class="field">
-    <%= f.label :latitude %><br>
-    <%= f.text_field :latitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
+    <%= f.input :longitude %>
   </div>
   <div class="actions">
     <%= f.submit %>

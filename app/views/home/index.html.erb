@@ -66,14 +66,14 @@
 
 
     <div class="col-md-4 col-sm-6 col-xs-12">
-      <div class="dashboard-div-wrapper bk-clr-one actuprincip" id="#">
-        <i class="fa fa-venus dashboard-div-icon" ></i>
-        <div class="progress progress-striped active">
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-          </div>
-        </div>
         <h5>Top Annonces</h5>
-      </div>
+        <div id="sliderr">
+          <ul>
+            <% @info_continu.each do |info| %>
+                <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
+            <% end %>
+          </ul>
+        </div>
     </div>
 
     <%= render 'contrib_tem' %>
@@ -165,11 +165,9 @@
 
   </div>
 
-
-
   <div class="row">
     <div class="col-md-8">
-    <h2 style="text-align: center">Bon à savoir</h2>
+      <h2 style="text-align: center">Bon à savoir</h2>
       <div class="panel-body">
         <div class="panel-group" id="accordion">
           <% @a_savoir.each do |savoir|  %>
@@ -191,7 +189,36 @@
       </div>
     </div>
     <%= render 'num_utile' %>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <div id="timeline">
+        <ul id="dates">
+          <% @events.each do|event| %>
+              <li><a href='#<%= event.id%>'><%= event.date.strftime('%m/%d/%Y') %></a></li>
+          <% end %>
+        </ul>
+        <ul id="issues">
+          <% @events.each do|event| %>
+              <li id="<%= event.id%>">
+                <img src="images/1.png" width="256" height="256" />
+                <h3><%= event.date.strftime('%m/%d/%Y') %></h3><h1><%= event.titre.html_safe %></h1>
+                <p><%= event.descriptif.html_safe %></p>
+              </li>
+          <% end %>
+        </ul>
+        <div id="grad_left"></div>
+        <div id="grad_right"></div>
+        <a href="#" id="next">+</a>
+        <a href="#" id="prev">-</a>
+      </div>
     </div>
+  </div>
+
+
+
 
 
 
