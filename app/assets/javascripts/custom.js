@@ -5,11 +5,10 @@ $(function(){
 
     var now = moment();
 
-    $(function(){
-        $().timelinr({
-            autoPlay: 'false',
-            autoPlayDirection: 'forward'
-        })
+
+    $().timelinr({
+        autoPlay: 'false',
+        autoPlayDirection: 'forward'
     });
 
     $('.newsticker').newsTicker({
