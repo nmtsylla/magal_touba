@@ -6,8 +6,6 @@ $(function(){
     var now = moment();
 
 
-
-
     $('.newsticker').newsTicker({
         row_height: 65,
         max_rows: 5,
@@ -53,4 +51,10 @@ $(function(){
 
 
 
+});
+
+
+$(".timeline").timelinr({
+    autoPlay: 'false',
+    autoPlayDirection: 'forward'
 });
