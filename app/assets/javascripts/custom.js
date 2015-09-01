@@ -6,10 +6,7 @@ $(function(){
     var now = moment();
 
 
-    $().timelinr({
-        autoPlay: 'false',
-        autoPlayDirection: 'forward'
-    });
+
 
     $('.newsticker').newsTicker({
         row_height: 65,
@@ -22,8 +19,8 @@ $(function(){
     });
 
     $('.sagesse-news').newsTicker({
-        row_height: 365,
-        max_rows: 1,
+        row_height: 65,
+        max_rows: 5,
         speed: 600,
         direction: 'up',
         duration: 4000,
@@ -55,12 +52,5 @@ $(function(){
     $(".news-pager").append('<a class="button-link read-more btn btn-primary" href="/articles">Afficher tous les articles</a>');
 
 
-   /* $('.redactor').redactor(
-        { "plugins": ['fontsize',
-            'fontcolor',
-            'fontfamily',
-            'fullscreen',
-            'textdirection',
-            'clips']
-        });*/
+
 });
