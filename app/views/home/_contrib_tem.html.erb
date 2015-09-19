@@ -1,8 +1,14 @@
-<div class="col-md-4 col-sm-6 col-xs-12">
-  <h3 class="text-center">Contributions & Témoignages </h3>
-  <ul id="nt-example1" class="newsticker">
-    <% @info_continu.each do |info| %>
-        <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
-    <% end %>
-  </ul>
+<div class="col-md-4 col-sm-6 col-xs-12 contrib">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        Contributions & Témoignages
+      </div>
+      <div class="panel-body">
+          <ul id="nt-example-contrib" class="contrib-news">
+            <% @contrib.each do |info| %>
+                <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
+            <% end %>
+          </ul>
+      </div>
+    </div>
 </div>

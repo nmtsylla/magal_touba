@@ -26,6 +26,16 @@ $(function(){
         pauseOnHover: 0
     });
 
+    $('.contrib-news').newsTicker({
+        row_height: 65,
+        max_rows: 1,
+        speed: 600,
+        direction: 'up',
+        duration: 10000,
+        autostart: 1,
+        pauseOnHover: 1
+    });
+
     $('#news-demo').slippry({
         // general elements & wrapper
         slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
