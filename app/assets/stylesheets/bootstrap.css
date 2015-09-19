@@ -6195,7 +6195,7 @@ button.close {
   line-height: 1;
 }
 .carousel-control .icon-prev:before {
-  content: '\2039';
+  content: '\20 ';
 }
 .carousel-control .icon-next:before {
   content: '\203a';
