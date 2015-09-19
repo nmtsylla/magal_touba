@@ -1,12 +1,16 @@
-<div class="contrib col-md-4 col-sm-6 col-xs-12">
+<div class="col-md-4 col-sm-6 col-xs-12">
     <div class="panel panel-info">
       <div class="panel-heading">
         Contributions & Témoignages
       </div>
-      <div class="panel-body">
+      <div class="panel-body contrib">
           <ul id="nt-example-contrib" class="contrib-news">
             <% @contrib.each do |info| %>
-                <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
+                <li>
+                  <%= info.titre %>
+                  <p><%= info.surtitre %></p>
+                  <%= link_to 'Lire', info %>
+                </li>
             <% end %>
           </ul>
       </div>

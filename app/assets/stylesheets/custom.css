@@ -164,3 +164,12 @@ div#sliderr ul {
     -moz-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
 }
+
+
+.contrib{
+    height: 350px;
+}
+
+.contrib-news{
+    font-style: italic;
+}

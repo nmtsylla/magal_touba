@@ -27,11 +27,11 @@ $(function(){
     });
 
     $('.contrib-news').newsTicker({
-        row_height: 65,
+        row_height: 390,
         max_rows: 1,
         speed: 600,
-        direction: 'up',
-        duration: 10000,
+        direction: 'down',
+        duration: 15000,
         autostart: 1,
         pauseOnHover: 1
     });

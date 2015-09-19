@@ -113,16 +113,12 @@
 #nt-example-contrib li {
     color: #ffffff;
     overflow: hidden;
-    height: auto;
+    height: 100%;
     padding: 10px;
-    line-height: 28px;
     list-style: none;
     font-size: 14px;
     text-align: left;
     border-bottom: 1px dotted #2c8162;
-}
-#nt-example-contrib li:hover {
-    color: #4e4e4e;
 }
 
 
