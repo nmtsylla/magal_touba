@@ -1,8 +1,12 @@
-
-
-<h3 class="text-center headrubrique">Informations</h3>
-<ul id="nt-example1" class="sagesse-news">
-  <% @depeche.each do |infcont| %>
-      <li><%= image_tag 'magal.png' , :id =>'minim',:class=>'text-center'%><br/><%= infcont.titre %> <%= link_to 'Lire', infcont %> </li>
-  <% end %>
-</ul>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      Informations
+    </div>
+    <div class="panel-body">
+        <ul id="nt-example1" class="sagesse-news">
+          <% @depeche.each do |infcont| %>
+              <li><%= image_tag 'magal.png' , :id =>'minim',:class=>'text-center'%><br/><%= infcont.titre %> <%= link_to 'Lire', infcont %> </li>
+          <% end %>
+        </ul>
+    </div>
+  </div>

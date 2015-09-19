@@ -36,6 +36,16 @@ $(function(){
         pauseOnHover: 1
     });
 
+    $('.fil').newsTicker({
+        row_height: 65,
+        max_rows: 5,
+        speed: 800,
+        direction: 'up',
+        duration: 5000,
+        autostart: 1,
+        pauseOnHover: 1
+    });
+
     $('#news-demo').slippry({
         // general elements & wrapper
         slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
