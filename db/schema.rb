@@ -16,29 +16,6 @@ ActiveRecord::Schema.define(version: 20150831164644) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: :cascade do |t|
-    t.string   "titre"
-    t.string   "surtitre"
-    t.string   "soustitre"
-    t.text     "descriptif"
-    t.text     "contenu"
-    t.float    "popularite"
-    t.integer  "rubrique_id"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.string   "slug"
-    t.integer  "type_article"
-    t.integer  "view_count"
-    t.string   "image_a_la_une_file_name"
-    t.string   "image_a_la_une_content_type"
-    t.integer  "image_a_la_une_file_size"
-    t.datetime "image_a_la_une_updated_at"
-    t.integer  "status"
-  end
-
-  add_index "articles", ["rubrique_id"], name: "index_articles_on_rubrique_id", using: :btree
-  add_index "articles", ["slug"], name: "index_articles_on_slug", unique: true, using: :btree
-
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
     t.string   "data_content_type"
@@ -127,15 +104,15 @@ ActiveRecord::Schema.define(version: 20150831164644) do
   end
 
   create_table "tmp_article", id: false, force: :cascade do |t|
-    t.string   "titre",       limit: 50
-    t.string   "surtitre",    limit: 50
-    t.string   "soustitre",   limit: 50
-    t.text     "descriptif"
-    t.text     "contenu"
-    t.float    "popularite"
-    t.integer  "rubrique_id"
-    t.datetime "created"
-    t.datetime "updated_at"
+    t.string  "titre",       limit: 50
+    t.string  "surtitre",    limit: 50
+    t.string  "soustitre",   limit: 50
+    t.text    "descriptif"
+    t.text    "contenu"
+    t.float   "popularite"
+    t.integer "rubrique_id"
+    t.date    "created"
+    t.date    "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -158,6 +135,4 @@ ActiveRecord::Schema.define(version: 20150831164644) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
-  add_foreign_key "articles", "rubriques"
-  add_foreign_key "articles", "rubriques"
 end

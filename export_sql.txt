@@ -1,6 +1,6 @@
 mysqldump -u serignetouba1 -h 208.91.198.197 -p --opt --where="1 limit 20" ahmadou_db spip_articles > dump.sql
 
-create table tmp_article(titre varchar(50), surtitre varchar(50), soustitre varchar(50), descriptif text, contenu text, popularite float, rubrique_id integer, created datetime, updated_at datetime);
+create table tmp_article(titre varchar(50), surtitre varchar(50), soustitre varchar(50), descriptif text, contenu text, popularite float, rubrique_id integer, created datet, updated_at datetime);
 
 insert into articles(titre, surtitre, contenu, rubrique_id, popularite, view_count, created_at, updated_at) (select titre, chapo, texte, id_rubrique, popularite, visites, date_redac, date_modif from spip_articles) ;
 
