@@ -2,7 +2,7 @@
 
   <h3 class="text-center headrubrique">Fil d'actualités</h3>
   <ul id="nt-example1" class="newsticker">
-    <% @depeche.each do |info| %>
+    <% @info_continu.each do |info| %>
         <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
     <% end %>
   </ul>

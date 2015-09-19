@@ -11,5 +11,6 @@ class HomeController < ApplicationController
     @sagess = Article.where(:rubrique_id => 11).order("RANDOM()").first(5)
     @a_savoir = Article.where(:rubrique_id => 5).order("RANDOM()").first(5)
     @events = Evenement.where("date >= ?", Date.today ).order("date").first(5)
+
   end
 end
