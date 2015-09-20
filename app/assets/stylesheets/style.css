@@ -20,6 +20,7 @@
  ============================================================ */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+@import url(https://fonts.googleapis.com/css?family=Exo);
 @import url('demo.css');
 @import url('font-awesome.css');
 /* GLOBALS */
@@ -186,6 +187,7 @@ header {
 }
 
 /* SUBMENU LINKS SECTION*/
+
 .menu-section ul li ul{
     display: none;
     color: #FFF;
@@ -194,7 +196,14 @@ header {
     padding: 10px ;
     text-transform: uppercase;
     visibility: hidden;
+
+
 }
+.menu-section ul li a:hover{
+    color: #ffffff;
+    background-color: #ffffff ;
+}
+
 .menu-section ul li:hover ul {
     display: block;
     visibility: visible;
@@ -202,32 +211,51 @@ header {
 }
 
 .menu-section ul li ul a:hover{
-    color: #000000;
+    color: #ffffff;
     background-color: #ffffff ;
 }
 
 /* MENU LINKS SECTION*/
+
 #menu-top a {
-    color: #FFF;
-    background-color: #3D3D3D;
+    color: #3D3D3D;
+    background-color: #FFF;
     text-decoration: none;
     font-weight: 500;
     padding: 10px 10px 10px 10px;
     text-transform: uppercase;
+    border-left: solid 0.5px #55C3A0;
+
+    border-bottom: solid 1px #55C3A0;
+
+
+}
+
+#menu-top a:hover {
+    color: #FFF;
+    background-color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 25px 25px 25px 25px;
+    text-transform: uppercase;
+
 }
 
 .menu-top-active {
     background-color: #55C3A0;
 
+
 }
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
     background-color: #55C3A0!important;
+    color: #ffffff;
     transition: 0.3s all ease;
 }
 
 .menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
     background-color: #55C3A0!important;
+    color: #ffffff;
 }
 
 
@@ -243,6 +271,7 @@ header {
 
 .navbar {
     margin-bottom: 0px;
+    border-bottom-color: #55C3A0;
 }
 /* =============================================================
    FOOTER SECTION STYLES
@@ -325,6 +354,7 @@ footer {
     background-color: #55C3A0;
     color: #ffffff;
     margin-bottom: 0;
+
 }
 
     .dashboard-div-wrapper .progress {
