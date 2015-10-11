@@ -204,8 +204,8 @@ header {
 
 }
 .menu-section ul li a:hover{
-    color: #ffffff;
-    background-color: #ffffff ;
+    color: #FFF;
+    background-color:#55C3A0 ;
 }
 
 .menu-section ul li:hover ul {
@@ -215,8 +215,8 @@ header {
 }
 
 .menu-section ul li ul a:hover{
-    color: #ffffff;
-    background-color: #ffffff ;
+    color: #FFF;
+    background-color:#55C3A0 ;
 }
 
 /* MENU LINKS SECTION*/
@@ -230,14 +230,11 @@ header {
     text-transform: uppercase;
     border-left: solid 0.5px #55C3A0;
 
-
-
-
 }
 
 #menu-top a:hover {
     color: #FFF;
-    background-color: #FFF;
+    background-color:#55C3A0 ;
     text-decoration: none;
     font-weight: 500;
 
@@ -255,12 +252,52 @@ header {
     background-color: #55C3A0!important;
     color: #ffffff;
     transition: 0.3s all ease;
+
 }
 
-.menu-section .dropdown-menu > li > a:hover,.menu-section .dropdown-menu > li > a:focus {
-    background-color: #55C3A0!important;
-    color: #ffffff;
+.menu-section .nav > li > ul{
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:150px;
+    z-index:200;
 }
+
+.menu-section .nav > li > ul:hover{
+    display:block;
+    background-color: #ffffff;
+    color: #55C3A0!important;
+
+}
+
+.menu-section .nav > li > ul > li {
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+    border: solid 0.5px #55C3A0;
+
+}
+
+.menu-section .nav > li:hover > ul > li {
+    background:none;
+}
+
+.menu-section .nav > li > ul > li  >a{
+    display:block;
+    height:50px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+
+    text-align:left;
+}
+
+
 
 
 .navbar-inverse {

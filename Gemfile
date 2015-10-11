@@ -66,6 +66,8 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 
 gem 'ckeditor'
 
+gem 'youtube_it', '~> 2.4.2'
+
 group :staging, :production do
   gem 'rails_12factor'
   gem 'newrelic_rpm', '>= 3.7.3'

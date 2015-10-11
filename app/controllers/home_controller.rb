@@ -1,5 +1,7 @@
 # encoding: utf-8
 class HomeController < ApplicationController
+  require 'youtube_it'
+
   def index
     @mouride_semaine = Article.where(:rubrique_id => 6).last
     @depeche = Article.where(:rubrique_id => 2).limit(10)
@@ -11,6 +13,11 @@ class HomeController < ApplicationController
     @sagess = Article.where(:rubrique_id => 11).order("RANDOM()").first(5)
     @a_savoir = Article.where(:rubrique_id => 5).order("RANDOM()").first(5)
     @events = Evenement.where("date >= ?", Date.today ).order("date").first(5)
+
+
+    #Connexion client à la chaine youtube
+    #client = YouTubeIt::Client.new(username: "youtube_username", password: "youtube_password", dev_key: "AIzaSyCg9GJiL5JmDO-BHSTRPH9_7yS7CetbYnY")
+
 
   end
 end
