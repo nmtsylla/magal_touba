@@ -41,7 +41,6 @@
 #nt-example1 {
 	max-width: 620px;
 	margin: auto;
-    background: #777;
 }
 
 #nt-example1 li a {
@@ -68,7 +67,7 @@
 }
 
 #nt-example1 li {
-	color: #ffffff;
+	color: #fff;
 	overflow: hidden;
 	height: auto;
 	padding: 10px;
@@ -77,6 +76,7 @@
 	font-size: 14px;
 	text-align: left;
 	border-bottom: 1px solid #fff;
+  background-color: rgba(119, 119, 119, 0.86);
 }
 #nt-example1 li:hover {
     color: #4e4e4e;
