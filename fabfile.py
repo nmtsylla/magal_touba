@@ -13,7 +13,7 @@ print USERNAME
 env.user = USERNAME
 env.password = PASSWORD
 
-REMOTE_WORKING_DIR = '/home/boromtouba/magal-touba/'
+REMOTE_WORKING_DIR = '/home/boromtouba/magal_touba/'
 
 
 def commit():
@@ -58,7 +58,7 @@ def sync(branch='master', remote='origin', runlocal=True):
 def deploy(branch='master', remote='origin'):
     with cd(REMOTE_WORKING_DIR):
         # with prefix('workon virtualenv'):
-        pull(branch, remote, False)
+        rpull()
         run("rake db:migrate RAILS_ENV=production")
         run("sudo /etc/init.d/nginx restart")
 
