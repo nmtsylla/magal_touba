@@ -59,6 +59,6 @@ def deploy(branch='master', remote='origin'):
     with cd(REMOTE_WORKING_DIR):
         # with prefix('workon virtualenv'):
         rpull()
+        run("bundle install")
         run("rake db:migrate RAILS_ENV=production")
         run("sudo /etc/init.d/nginx restart")
-
