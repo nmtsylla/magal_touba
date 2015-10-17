@@ -1,5 +1,5 @@
 json.array!(@articles) do |article|
-  json.extract! article, :id, :titre, :surtitre, :soustitre, :descriptif, :contenu, :popularite, :rubrique_id
+  json.extract! article, :id, :titre, :surtitre, :soustitre, :descriptif, :popularite, :rubrique_id
   json.rubrique do
     json.titre article.rubrique.titre
   end

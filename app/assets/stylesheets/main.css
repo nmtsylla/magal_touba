@@ -6,7 +6,7 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
- 
+
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
@@ -76,7 +76,7 @@
 	list-style: none;
 	font-size: 14px;
 	text-align: left;
-	border-bottom: 1px dotted #2c8162;
+	border-bottom: 1px solid #fff;
 }
 #nt-example1 li:hover {
     color: #4e4e4e;
@@ -118,7 +118,7 @@
     list-style: none;
     font-size: 14px;
     text-align: left;
-    border-bottom: 1px dotted #2c8162;
+    border-bottom: 1px solid #fff;
 }
 
 
@@ -156,8 +156,9 @@
     list-style: none;
     font-size: 14px;
     text-align: left;
-    border-bottom: 1px dotted #2c8162;
+    border-bottom: 1px solid #fff;
 }
+
 #nt-fil li:hover {
     color: #4e4e4e;
 }

@@ -8,6 +8,16 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html
       format.js
+      format.json {
+    render :json => {
+      :current_page => @articles.current_page,
+      :per_page => @articles.per_page,
+      :total_entries => @articles.total_entries,
+      :entries => @articles,
+      :next_page => @articles.next_page,
+      :previous_page => @articles.previous_page
+    }
+  }
     end
   end
 

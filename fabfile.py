@@ -1,15 +1,64 @@
-from fabric.api import local
+__author__ = 'nmtsylla'
 
-def sync():
-   #local('git add -p')
-   #print("enter your git commit comment: ")
-   #comment = raw_input()
-   local('git pull origin master')
-   local('git commit -a')
-   local('git push origin master')
+from fabric.api import local, run, cd, env
+env.hosts = [
+        '166.62.100.119',
+      # 'ip.add.rr.ess
+      # 'server2.domain.tld',
+]
 
-def deploy():
-   local('heroku maintenance:on')
-   local('git push heroku master')
-   local('heroku maintenance:off')
+
+from cred import *
+print USERNAME
+env.user = USERNAME
+env.password = PASSWORD
+
+REMOTE_WORKING_DIR = '/home/boromtouba/magal_touba/'
+
+
+def commit():
+    """
+    add the code to the wathc then commit it
+    """
+    local("git add -p && git commit")
+
+
+def pull(branch='master', remote='origin'):
+    """
+    get code from the repo to the local
+    """
+    local("git pull %s %s" % (remote, branch))
+
+
+def rpull(branch='master', remote='origin'):
+    """
+    get code from the repo to the local
+    """
+    with cd(REMOTE_WORKING_DIR):
+        run("git pull %s %s" % (remote, branch))
+
+
+def push(branch='master', remote='origin', runlocal=True):
+    """
+    send the local code to the repo
+    """
+    if runlocal:
+        # lance la commande en local
+        local("git push %s %s" % (remote, branch))
+    else:
+        # lance la commande sur les serveurs de la liste eng.hosts
+        run("git push %s %s" % (remote, branch))
+
+
+def sync(branch='master', remote='origin', runlocal=True):
+    pull(branch, remote, runlocal)
+    push(branch, remote, runlocal)
+
+
+def deploy(branch='master', remote='origin'):
+    with cd(REMOTE_WORKING_DIR):
+        # with prefix('workon virtualenv'):
+        rpull()
+        run("rake db:migrate RAILS_ENV=production")
+        run("sudo /etc/init.d/nginx restart")
 
