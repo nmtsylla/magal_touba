@@ -9,9 +9,10 @@
       <ul id="issues">
         <% @events.each do|event| %>
             <li id="<%= event.id%>">
-              <img src="images/1.png" width="256" height="256" />
-              <h3><%= event.date.strftime('%m/%d/%Y') %></h3><h1><%= link_to  event.titre , event %></h1>
-              <p><%= event.descriptif.html_safe %></p>
+              <img src="<%= event.image %>" width="256" height="256" />
+              <h3><%= event.date.strftime('%m/%d/%Y') %> </h3>
+              <h1> <%= link_to  event.titre , event %></h1>
+              <%= event.descriptif.html_safe %> 
             </li>
         <% end %>
       </ul>
