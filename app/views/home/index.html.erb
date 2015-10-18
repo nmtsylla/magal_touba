@@ -153,8 +153,8 @@
                 </div>
                 <div id="collapse<%= savoir.id %>" class="panel-collapse collapse" style="height: 0px;">
                   <div class="panel-body">
-                    <%= savoir.surtitre %>
-                    <%= savoir.contenu.html_safe %>
+                    <%= savoir.titre %>
+                    <%= savoir.surtitre + " " +savoir.contenu.html_safe %>
                   </div>
                 </div>
               </div>
