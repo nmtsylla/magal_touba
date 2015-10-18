@@ -69,4 +69,9 @@ $(function(){
 
     $(".news-pager").append('<a class="button-link read-more btn btn-primary" href="/articles">Afficher tous les articles</a>');
 
+
+    $('.timeline').timelinr({
+        autoPlay: 'false',
+        autoPlayDirection: 'forward'
+    });
 });
