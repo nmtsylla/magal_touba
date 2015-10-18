@@ -12,10 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require custom
+//= require slippry.min
 //= require modernizr.custom.79639
 //= require ckeditor/init
 //= require moment
 //= require moment/fr.js
-//= require custom
 //= require bindWithDelay
 //= require_tree .
