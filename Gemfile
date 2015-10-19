@@ -67,6 +67,8 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'ckeditor'
 
 gem 'youtube_it', '~> 2.4.2'
+gem 'inherited_resources'
+gem 'acts_as_commentable'
 
 group :staging, :production do
   gem 'rails_12factor'
