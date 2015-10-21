@@ -43,29 +43,34 @@
       </div>
       <%= render 'mouride_de_la_semaine' %>
     </div>
-
+    <br/><br/>
     <div class="row">
 
-    <div class="col-md-8 col-sm-6 col-xs-12">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            Photos de la semaine
+          </div>
+        </div>
+        <div class="row">
+          <%= image_tag('http://www.dakaractu.com/photo/art/default/4796555-7171363.jpg?v=1349777835', class: 'center-block') %>
 
-    </div>
+        </div>
+      </div>
 
     <%= render 'contrib_tem' %>
 
     </div>
-
+  <br/><br/>
   <div class="row">
 
       <div class="col-md-8 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper  actuq" id="#">
-
-
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              Vidéos
-            </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            Top Vidéos
           </div>
-
+        </div>
+        <div class="dashboard-div-wrapper  actuq" id="#">
 
           <div class="col-md-4 col-sm-6 col-xs-12 ">
             <a target="video_iframe" href="http://www.youtube.com/embed/nbXPvPCxor0">
@@ -112,29 +117,23 @@
 
     <%= render 'photo' %>
     <%= render 'pub' %>
-  </div>
-
-  <div class="row">
-
-      <div class="col-md-8 col-sm-6 col-xs-12">
-        <div class="dashboard-div-wrapper bk-clr-one actusec" id="#">
-          <h5>Bannières évenements</h5>
-        </div>
-      </div>
-    <%= render 'decouverte' %>
 
   </div>
 
   <div class="row">
     <div class="col-md-8">
-      <h2 style="text-align: center">Bon à savoir</h2>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Bon à savoir
+        </div>
+      </div>
       <div class="panel-body">
         <div class="panel-group" id="accordion">
           <% @a_savoir.each do |savoir|  %>
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= savoir.id %>" class="collapsed"><%= savoir.titre %></a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= savoir.id %>" class="collapsed"><%= savoir.titre %><i class="fa fa-book" style="color: #228B22">Lire</i></a>
                   </h4>
                 </div>
                 <div id="collapse<%= savoir.id %>" class="panel-collapse collapse" style="height: 0px;">
@@ -148,6 +147,7 @@
         </div>
       </div>
     </div>
+    <%= render 'decouverte' %>
     <%= render 'num_utile' %>
   </div>
 
