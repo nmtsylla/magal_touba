@@ -29,6 +29,7 @@
       <%= csrf_meta_tags %>
       <%= yield(:head) %>
   </head>
+  <%= disqus_init %>
   <body>
       <%= render '/layouts/header' %>
       <%= render '/layouts/container' %>

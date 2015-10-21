@@ -98,6 +98,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    disqus_rails (0.0.6)
     dotenv (2.0.2)
     dotenv-rails (2.0.2)
       dotenv (= 2.0.2)
@@ -362,6 +363,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise (~> 3.4.1)
+  disqus_rails
   dotenv-rails
   email_validator
   factory_girl_rails
@@ -399,3 +401,6 @@ DEPENDENCIES
   web-console (~> 2.0)
   will_paginate (~> 3.0.5)
   youtube_it (~> 2.4.2)
+
+BUNDLED WITH
+   1.10.6
