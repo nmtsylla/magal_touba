@@ -3065,8 +3065,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #55C3A0;
-  border-color: #55C3A0;
+  background-color: #228B22;
+  border-color: #228B22;
 
 }
 .btn-primary:hover,
@@ -3075,9 +3075,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #55C3A0;
+  color: #228B22;
   background-color: #fff;
-  border-color: #55C3A0;
+  border-color: #228B22;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -4937,7 +4937,7 @@ a.thumbnail.active {
 }
 .alert-success {
   color: #ffffff;
-  background-color: #55C3A0;
+  background-color: #228B22;
   border-color: #d6e9c6;
 }
 .alert-success hr {
@@ -5574,19 +5574,20 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d6e9c6;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #FFF;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: #FFF;
+  background-color: #228B22;
+  border-color: #FFF;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: #FFF;
+  color: #FFF
 }
 .panel-info > .panel-heading .badge {
-  color: #d9edf7;
-  background-color: #31708f;
+  color: #FFF;
+  background-color: #228B22;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #bce8f1;

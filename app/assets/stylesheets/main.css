@@ -28,7 +28,7 @@
 
 #nt-title li {
 	font-size: 24px;
-	color: #4E4E4E;
+	color: #FFF;
 	white-space: nowrap;
 	list-style: none;
 	overflow: hidden;
@@ -44,8 +44,8 @@
 }
 
 #nt-example1 li a {
-    color: #26C281;
-    font-weight: bold;
+    color: #98FB98;
+    font-size: medium;
 }
 
 #nt-example1-container {
@@ -64,7 +64,7 @@
 }
 
 #nt-example1-container i:hover {
-	color: #333;
+	color: #98FB98;
 }
 
 #nt-example1 li {
@@ -80,7 +80,7 @@
 
 }
 #nt-example1 li:hover {
-    color: #000000;
+    color: #4e4e4e;
 }
 
 
@@ -166,5 +166,6 @@
 
 
 .newsticker li a, .fil li a, .contrib-news li a{
-    color: #26C281;
+    color: #98FB98;
+    font-size: medium;
 }

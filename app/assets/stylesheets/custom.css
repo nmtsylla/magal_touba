@@ -16,7 +16,7 @@ p.article{
 }
 
 .content-wrapper{
-    background-color: white;
+    background-color: #FFF;
     color: rgba(0,0,0,0.8);
 }
 
@@ -96,13 +96,13 @@ p.article{
 }
 
 #accordion .panel-default .panel-collapse{
-    color: #fff;
+    color: #FFF;
     background-color: rgba(119, 119, 119, 0.86);
 }
 
 #news-demo .text-content{
     background-color: rgba(119, 119, 119, 0.86);
-    color: #fff;
+    color: #FFF;
 }
 #news-demo .text{
     white-space: nowrap;
@@ -119,13 +119,13 @@ p.article{
 
 }
 .panel-info > .panel-heading {
-    color: #fff;
-    background-color: #55C3A0;
+    color: #FFF;
+    background-color: #228B22;
 
 }
 
 .panel-info > .panel-body {
-    color: #fff;
+    color: #FFF;
     background-color: rgba(119, 119, 119, 0.86);
 
 

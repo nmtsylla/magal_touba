@@ -59,9 +59,9 @@
 .page-head-line {
     font-weight: 900;
     padding-bottom: 20px;
-    border-bottom: 2px solid #55C3A0;
+    border-bottom: 2px solid #228B22;
     text-transform: uppercase;
-    color: #55C3A0;
+    color: #228B22;
     font-size: 20px;
     margin-bottom: 40px;
 }
@@ -88,7 +88,7 @@ margin-bottom: 20px;
 color: #fff;
 text-align: center;
 cursor:pointer;
-background-color:#55C3A0;
+background-color:#228B22;
 -webkit-border-radius:50%;
     -moz-border-radius:50%;
 }
@@ -96,7 +96,7 @@ background-color:#55C3A0;
    HEADER SECTION STYLES
  ============================================================ */
 header {
-    background-color: #55C3A0;
+    background-color: #228B22;
     color: #fff;
     /*padding: 10px;*/
     text-align: right;
@@ -157,7 +157,7 @@ header {
 
 .user-settings-wrapper .nav > li > a:hover,.user-settings-wrapper .nav > li > a:focus {
     text-decoration: none;
-    background-color: #55C3A0!important;
+    background-color: #228B22!important;
 }
 
 .user-settings-wrapper img {
@@ -186,23 +186,24 @@ header {
 /* SUBMENU LINKS SECTION*/
 
 .menu-section{
-    border-bottom: solid 1px #55C3A0;
+    border-bottom: solid 1px #228B22;
 }
 
 .menu-section ul li ul{
     display: none;
     color: #FFF;
-    background-color:#55C3A0 ;
+    background-color:#228B22 ;
     text-decoration: none;
     padding: 10px ;
     text-transform: uppercase;
     visibility: hidden;
 
 
+
 }
 .menu-section ul li a:hover{
     color: #FFF;
-    background-color:#55C3A0 ;
+    background-color:#228B22;
 }
 
 .menu-section ul li:hover ul {
@@ -213,23 +214,23 @@ header {
 
 .menu-section ul li ul a:hover{
     color: #FFF;
-    background-color:#55C3A0 ;
+    background-color:#228B22 ;
 }
 
 /* MENU LINKS SECTION*/
 
 #menu-top a {
-    color: #55C3A0;
+    color: #228B22;
     text-decoration: none;
     font-weight: 600;
     padding: 10px 20px 10px 20px;
     text-transform: uppercase;
-    border-left: solid 0.5px #55C3A0;
+    border-left: solid 0.5px #228B22;
 
 }
 #menu-top a:hover {
     color: #FFF;
-    background-color:#55C3A0 ;
+    background-color:#228B22 ;
     text-decoration: none;
     font-weight: 500;
 
@@ -237,11 +238,11 @@ header {
 }
 
 #menu-top-active {
-    background-color: #55C3A0;
+    background-color: #228B22;
 }
 
 .menu-section .nav > li > a:hover,.menu-section .nav > li > a:focus {
-    background-color: #55C3A0!important;
+    background-color: #228B22!important;
     color: #ffffff;
     transition: 0.3s all ease;
 }
@@ -262,7 +263,7 @@ header {
     margin:0px;
     padding:0px;
     width:200px;
-    border: solid 0.5px #55C3A0;
+    border: solid 0.5px #228B22;
 
 }
 
@@ -281,7 +282,7 @@ header {
 
 .navbar-inverse {
     background-image: url("banniere.jpg");
-    border-bottom-color: #55C3A0;
+    border-bottom-color: #228B22;
 }
 
 .navbar-toggle {
@@ -291,7 +292,7 @@ header {
 
 .navbar {
     margin-bottom: 0px;
-    border-bottom-color: #55C3A0;
+    border-bottom-color: #228B22;
 }
 /* =============================================================
    FOOTER SECTION STYLES
@@ -300,7 +301,7 @@ footer {
     padding: 10px;
     color: #fff;
     font-size: 12px;
-    background-color: #55C3A0;
+    background-color: #228B22;
 }
 
     footer a, footer a:hover {
@@ -323,7 +324,7 @@ footer {
 }
 
 .bk-clr-three {
-    background-color: #55C3A0;
+    background-color: #228B22;
 }
 
 .bk-clr-four {
@@ -369,11 +370,11 @@ footer {
     border-top: solid;
 
     border-top-radius: 5% 5%;
-    border-top-color: #55C3A0;
+    border-top-color: #228B22;
 
 }
 .headrubrique{
-    background-color: #55C3A0;
+    background-color: #228B22;
     color: #ffffff;
     margin-bottom: 0;
 

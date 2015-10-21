@@ -6,7 +6,7 @@
     <div class="panel-body">
       <ul id="nt-fil" class="fil">
         <% @depeche.each do |info| %>
-            <li><%= info.titre %> <%= link_to 'Lire', info %> </li>
+            <li><%= info.titre %> <i class="fa fa-book" style="color: #98FB98"></i><%= link_to 'Lire', info %> </li>
         <% end %>
       </ul>
     </div>
