@@ -15,7 +15,7 @@ Rails.application.configure do
 
   config.cache_classes = true
   config.serve_static_assets = true
-  config.assets.compile = true
+  config.assets.compile = false
   config.assets.digest = true
 
   # Disable serving static files from the `/public` folder by default since

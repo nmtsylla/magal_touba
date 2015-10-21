@@ -21,7 +21,9 @@
 		<p class="">
 			by <a href="#">Author's name</a>, <%= @article.rubrique.titre.humanize %>
 		</p>
-      <p><span class="glyphicon glyphicon-time"></span> Posted on <%=l @article.created_at %></p>
+        <p>
+          <span class="glyphicon glyphicon-time"></span> Posted on <%=l @article.created_at %>
+        </p>
 
 		<% if current_user %>
 			<%= link_to 'Edit', edit_article_path(@article) %> |
@@ -29,8 +31,6 @@
 		<% end %>
 
 		<hr>
-
-		<!-- Blog Comments -->
 
 		<!-- Comments Form -->
 		<div class="well">
@@ -52,7 +52,6 @@
 	</div>
 
 	<%= render 'home/left_part' %>
-
 
 </div>
 
