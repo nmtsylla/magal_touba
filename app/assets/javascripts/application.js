@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require custom
 //= require slippry.min
 //= require disqus_rails
 //= require modernizr.custom.79639

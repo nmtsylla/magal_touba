@@ -11,5 +11,12 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require custom
+ *= require demo
+ *= require footer
+ *= require main
+ *= require slippry
+ *= require style
+ *= require timeline
  *= require_self
  */
