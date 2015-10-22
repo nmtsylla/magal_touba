@@ -23,6 +23,7 @@ p.article{
 .thumb{
     height: 150px;
     background-position:center;
+    margin: auto;
 }
 
 

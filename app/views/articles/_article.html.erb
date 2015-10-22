@@ -7,8 +7,7 @@
           <img src="http://placehold.it/300x150" alt="">
       <% end %>
     </div>
-    <h3><%= article.titre %></h3>
-    <p><%= link_to 'Lire...', article %></p>
+    <h3><%= link_to article.titre, article %></h3>
     <span class="time_display"><%= article.created_at %></span>
   </div>
   <% if current_user %>

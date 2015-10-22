@@ -28,7 +28,6 @@
     <div id="infinite-scrolling">
       <%= will_paginate %>
     </div>
-
   </div>
 
 
@@ -40,9 +39,7 @@
 	</div>
 
 <script>
-  $(function(){
       $('.time_display').each(function() {
           this.textContent = moment(this.textContent).fromNow();
       });
-  });
 </script>
