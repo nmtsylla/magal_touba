@@ -1,6 +1,8 @@
 # encoding: utf-8
 class HomeController < ApplicationController
   require 'youtube_it'
+  http_basic_authenticate_with :name => "magal", :password => "Touba313" 
+
 
   def index
     @mouride_semaine = Article.where(:rubrique_id => 6).last
