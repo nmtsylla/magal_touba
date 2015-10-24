@@ -105,6 +105,11 @@ p.article{
     background-color: rgba(119, 119, 119, 0.86);
     color: #FFF;
 }
+
+#news-demo .text-content h2 a{
+    text-decoration: none;
+    color: #FFF;
+}
 #news-demo .text{
     white-space: nowrap;
     overflow: hidden;
