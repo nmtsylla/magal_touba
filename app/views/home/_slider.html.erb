@@ -8,10 +8,10 @@
             </div>
             <div class="image-content">
               <% if slide.image_a_la_une.nil? %>
-                  <%= image_tag('http://placehold.it/750x350') %>
-            <% else %>
                   <%= image_tag(slide.image_a_la_une) %>
-            <% end %>
+              <% else %>
+                  <%= image_tag('http://placehold.it/750x350') %>
+              <% end %>
             </div>
         </article>
         <% end %>

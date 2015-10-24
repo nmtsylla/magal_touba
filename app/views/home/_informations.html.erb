@@ -3,9 +3,9 @@
       Informations
     </div>
     <div class="panel-body">
-        <ul id="nt-example1" class="sagesse-news">
+        <ul id="nt-example1" >
           <% @depeche.each do |infcont| %>
-              <li><%= image_tag 'magal.png' , :id =>'minim',:class=>'text-center'%><br/><%= infcont.titre %><i class="fa fa-book" style="color: #98FB98"></i> <%= link_to 'Lire', infcont %> </li>
+              <li><%= infcont.titre %><i class="fa fa-book" style="color: #98FB98"></i> <%= link_to 'Lire', infcont %> </li>
           <% end %>
         </ul>
     </div>

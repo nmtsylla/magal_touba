@@ -3,9 +3,9 @@
       Sagesse
     </div>
     <div class="panel-body">
-      <ul id="nt-example1" class="sagesse-news">
+      <ul id="nt-example1" >
         <% @sagess.each do |sagesse| %>
-            <li><%= image_tag 'magal.png' , :id =>'minim',:class=>'text-center'%><br/><%= sagesse.titre %><i class="fa fa-book" style="color: #98FB98"></i> <%= link_to 'Lire', sagesse %> </li>
+            <li><%= sagesse.titre %><i class="fa fa-book" style="color: #98FB98"></i> <%= link_to 'Lire', sagesse %> </li>
         <% end %>
       </ul>
     </div>

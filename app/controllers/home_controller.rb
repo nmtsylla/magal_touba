@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def index
     @mouride_semaine = Article.where(:rubrique_id => 6).last
-    @depeche = Article.where(:rubrique_id => 2).limit(10)
+    @depeche = Article.where(:rubrique_id => 2).limit(5)
     @info_continu = Article.where(:rubrique_id => 7).limit(10)
     @contrib = Article.where(:rubrique_id => 10).order("RANDOM()").first(5)
     @dossier = Article.where(:rubrique_id => 9).order("RANDOM()").first
