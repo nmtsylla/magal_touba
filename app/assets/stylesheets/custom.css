@@ -174,3 +174,12 @@ div#sliderr ul {
 .contrib-news{
     font-style: italic;
 }
+
+#numeros-utiles{
+    margin: auto 0;
+}
+
+#numeros-utiles li{
+    list-style: none;
+    line-height: 2em;
+}

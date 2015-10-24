@@ -1,18 +1,21 @@
 class Video < ActiveRecord::Base
+  belongs_to :user
   acts_as_commentable
 
-  attr_accessor :comment
+  before_save :get_youtube_thumbnail
 
-  def self.yt_session
-    @yt_session ||= YouTubeIt::Client.new(:username => '18safar1313h', :password => 'mouRide1touba#', :dev_key => 'AIzaSyCg9GJiL5JmDO-BHSTRPH9_7yS7CetbYnY')
-    @yt_session.videos_by(:user => '18safar1313h')
+  def get_youtube_thumbnail
+    url = extract_url_from_body
+
+    unless url.blank?
+      client   = YouTubeIt::Client.new
+      response = client.video_by(url)
+      self.thumbnail = response.thumbnails.first.url
+    end
   end
 
-  def self.video_options(params)
-    opts = {:title => params[:title],
-            :description => params[:description],
-            :category => "People",
-            :keywords => ["test"]}
-    params[:is_unpublished] == "1" ? opts.merge(:private => "true") : opts
+  def extract_url_from_body
+    URI.extract(body).first
   end
+
 end
