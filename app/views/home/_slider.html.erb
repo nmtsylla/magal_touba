@@ -3,11 +3,16 @@
         <%= @a_la_une.each do |slide| %>
         <article>
             <div class="text-content">
-                <h2><%= slide.titre %></h2>
-                <p class="text"><%= slide.surtitre.truncate(500) %></p>
-                <%= link_to 'read more', slide, class: 'button-link read-more btn btn-primary btn-lg'%>
+                <h2><%= link_to slide.titre, slide %></h2>
+                <p class="text"></p>
             </div>
-            <div class="image-content"><%= image_tag('http://placehold.it/750x350') %></div>
+            <div class="image-content">
+              <% if slide.image_a_la_une.nil? %>
+                  <%= image_tag(slide.image_a_la_une) %>
+              <% else %>
+                  <%= image_tag('http://placehold.it/750x350') %>
+              <% end %>
+            </div>
         </article>
         <% end %>
     </section>
