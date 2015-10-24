@@ -17,6 +17,7 @@
 //= require modernizr.custom.79639
 //= require ckeditor/init
 //= require moment
+//= require rrssb.min
 //= require moment/fr.js
 //= require bindWithDelay
 //= require_tree .
