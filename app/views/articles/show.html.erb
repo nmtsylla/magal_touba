@@ -6,10 +6,7 @@
 		<!-- Title -->
 		<h1><%= @article.titre %></h1>
 
-
-
-		<!-- Preview Image -->
-        <%= image_tag @article.image_a_la_une_url(:display) %>
+        <%= image_tag @article.image_a_la_une_url(:larger) %>
 		<hr>
 
 		<!-- Post Content -->

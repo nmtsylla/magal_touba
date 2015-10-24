@@ -4,11 +4,10 @@
         <article>
             <div class="text-content">
                 <h2><%= link_to slide.titre, slide %></h2>
-                <p class="text"></p>
             </div>
             <div class="image-content">
-              <% if slide.image_a_la_une.nil? %>
-                  <%= image_tag(slide.image_a_la_une) %>
+              <% if slide.image_a_la_une_url %>
+                  <%= image_tag(slide.image_a_la_une_url(:slide)) %>
               <% else %>
                   <%= image_tag('http://placehold.it/750x350') %>
               <% end %>

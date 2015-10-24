@@ -42,6 +42,26 @@ class ThumbnailUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [200, 200, :north]
   end
 
+  version :larger do
+    process :eager => true
+    process :resize_to_fill => [600, 450, :north]
+  end
+
+  version :slide do
+    process :eager => true
+    process :resize_to_fill => [750, 350, :north]
+  end
+
+  version :medium do
+    process :eager => true
+    process :resize_to_fill => [300, 300, :north]
+  end
+
+  version :article do
+    process :eager => true
+    process :resize_to_fill => [300, 150, :north]
+  end
+
   version :thumbnail do
     process :eager => true
     process :resize_to_fit => [50, 50]

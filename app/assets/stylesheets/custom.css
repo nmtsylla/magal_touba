@@ -102,6 +102,7 @@ p.article{
 }
 
 #news-demo .text-content{
+    width: 30%;
     background-color: rgba(119, 119, 119, 0.86);
     color: #FFF;
 }
@@ -117,7 +118,7 @@ p.article{
 }
 
 #news-demo .image-content{
-   width: 60%;
+    width: 70%;
     float: right;
 }
 
