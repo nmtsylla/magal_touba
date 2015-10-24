@@ -59,9 +59,6 @@ gem 'font-awesome-rails'
 gem 'cloudinary'
 gem 'carrierwave'
 gem 'mini_magick'
-#gem 'redactor-rails'
-#gem "carrierwave"
-#gem "mini_magick"
 
 gem 'betterlorem'
 gem 'disqus_rails'
