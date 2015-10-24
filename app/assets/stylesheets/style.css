@@ -279,10 +279,10 @@ header {
 
 
 
-
 .navbar-inverse {
     background-image: url("banniere.jpg");
     border-bottom-color: #228B22;
+    background-size: cover;
 }
 
 .navbar-toggle {

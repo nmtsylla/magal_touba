@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dmuaznfdn
+  api_key: '594924634469315'
+  api_secret: t32wEkDO0QEZwdqXVSFkHmwkMK0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dmuaznfdn
+  api_key: '594924634469315'
+  api_secret: t32wEkDO0QEZwdqXVSFkHmwkMK0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dmuaznfdn
+  api_key: '594924634469315'
+  api_secret: t32wEkDO0QEZwdqXVSFkHmwkMK0
+  enhance_image_tag: true
+  static_image_support: false

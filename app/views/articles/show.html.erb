@@ -9,7 +9,7 @@
 
 
 		<!-- Preview Image -->
-		<%= image_tag(@article.image_a_la_une, :class => "img-responsive") %>
+        <%= image_tag @article.image_a_la_une_url(:display) %>
 		<hr>
 
 		<!-- Post Content -->

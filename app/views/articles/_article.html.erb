@@ -2,7 +2,7 @@
   <div class="bs-component">
     <div>
       <% if article.image_a_la_une_file_name %>
-          <%= image_tag(article.image_a_la_une(:medium), class:'thumb img-responsive', ) %>
+          <%= image_tag article.image_a_la_une_url(:thumbnail), class:'thumb img-responsive' %>
       <% else %>
           <img src="http://placehold.it/300x150" alt="">
       <% end %>

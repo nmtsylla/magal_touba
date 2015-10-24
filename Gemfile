@@ -56,6 +56,8 @@ end
 gem 'paperclip', '~> 4.2.1'
 gem 'momentjs-rails'
 gem 'font-awesome-rails'
+gem 'cloudinary'
+gem 'carrierwave'
 #gem 'redactor-rails'
 #gem "carrierwave"
 #gem "mini_magick"
