@@ -2,9 +2,9 @@
   <div class="bs-component">
     <div>
       <% if article.image_a_la_une_url.nil? %>
-          <img src="http://placehold.it/300x150" alt="">
+          <img src="http://placehold.it/300x150" alt="" class="img-responsive"/>
       <% else %>
-          <%= image_tag article.image_a_la_une_url(:article), class:'thumb img-responsive' %>
+          <%= image_tag article.image_a_la_une_url(:article), class:'img-responsive' %>
       <% end %>
     </div>
     <h3><%= link_to article.titre, article, class: 'line-clamp' %></h3>
