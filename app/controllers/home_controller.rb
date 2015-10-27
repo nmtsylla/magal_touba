@@ -17,4 +17,17 @@ class HomeController < ApplicationController
     @events = Evenement.where("date >= ?", Date.today ).order("date").first(5)
 
   end
+
+  def le_fondateur
+  end
+
+  def le_grand_magal
+  end
+
+  def la_ville
+  end
+
+  def les_khalifs
+  end
+
 end

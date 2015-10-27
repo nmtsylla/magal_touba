@@ -10,4 +10,8 @@ class Article < ActiveRecord::Base
   self.per_page = 15
 
   mount_uploader :image_a_la_une, ThumbnailUploader
+
+  def rubrique_name
+      rubrique.titre.humanize
+  end
 end
