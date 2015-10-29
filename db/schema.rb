@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20151024202208) do
     t.string   "titre"
     t.string   "surtitre"
     t.string   "soustitre"
-    t.text     "descriptif"
-    t.text     "contenu"
+    t.string   "descriptif"
+    t.string   "contenu"
     t.float    "popularite"
     t.integer  "rubrique_id"
     t.datetime "created_at",                  null: false
@@ -128,15 +128,15 @@ ActiveRecord::Schema.define(version: 20151024202208) do
   end
 
   create_table "tmp_article", id: false, force: :cascade do |t|
-    t.string   "titre",       limit: 50
-    t.string   "surtitre",    limit: 50
-    t.string   "soustitre",   limit: 50
-    t.text     "descriptif"
-    t.text     "contenu"
-    t.float    "popularite"
-    t.integer  "rubrique_id"
-    t.datetime "created"
-    t.datetime "updated_at"
+    t.string  "titre",       limit: 50
+    t.string  "surtitre",    limit: 50
+    t.string  "soustitre",   limit: 50
+    t.text    "descriptif"
+    t.text    "contenu"
+    t.float   "popularite"
+    t.integer "rubrique_id"
+    t.date    "created"
+    t.date    "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -173,7 +173,7 @@ ActiveRecord::Schema.define(version: 20151024202208) do
 
   add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree
 
-  add_foreign_key "articles", "rubriques"
-  add_foreign_key "articles", "rubriques"
+  add_foreign_key "articles", "rubriques", name: "articles_rubrique_id_fkey"
+  add_foreign_key "articles", "rubriques", name: "articles_rubrique_id_fkey1"
   add_foreign_key "videos", "users"
 end
