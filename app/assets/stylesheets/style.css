@@ -503,7 +503,7 @@ footer {
     left:50px;
     width:40%;
     background-color: #228B22;
-    border: solid 1px;
+    border: solid 1px #ffffff;
     border-radius: 5px;
 
     /* filter:0.7(opacity:60) */
@@ -518,7 +518,7 @@ footer {
     color:#ffffff;
     margin:0;
     font-size:140%;
-    padding:20px 8px 2px;
+    padding:2px 2px 2px 2px;
     font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
 }
 .lof-main-item-desc h3 a:hover{
@@ -534,6 +534,7 @@ ul.lof-navigator{
     margin:0;
     position:absolute;
     width:100%;
+    height: 100%;
 }
 ul.lof-navigator li{
     cursor:hand;
@@ -562,7 +563,6 @@ ul.lof-navigator li{
 
 }
 
-
 .lof-navigator li h3{
     color:#ffffff;
     font-size:100%;
@@ -586,8 +586,8 @@ ul.lof-navigator li{
     color:#FFF;
 }
 .lof-navigator li .img{
-    height:60px;
-    width:60px;
+    height:70%;
+    width:20%;
     margin:15px 15px 10px 0px;
     float:left;
     padding:3px;
@@ -602,7 +602,7 @@ ul.lof-navigator li{
 .lof-next{
     position:absolute;
     top:0;
-    height:30px;
+    height:30%;
     background:#228B22;
     display:block;
     width:100%;
@@ -610,7 +610,7 @@ ul.lof-navigator li{
 .lof-previous{
     position:absolute;
     bottom:0;
-    height:30px;
+    height:30%;
     background:#228B22;
     display:block;
     width:100%;
