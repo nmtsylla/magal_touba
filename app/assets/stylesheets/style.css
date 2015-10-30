@@ -450,9 +450,9 @@ footer {
 .lof-slidecontent{
     position:relative;
     overflow:hidden;
-    border:black solid 1px;
-    width:892px;
-    height:300px;
+    border:#228B22 solid 1px;
+    width:100%;
+    height:350px;
 }
 .lof-slidecontent .preload{
     height:100%;
@@ -462,7 +462,7 @@ footer {
     top:0;
     left:0;
     z-index:100000;
-    color:#FFF;
+    color:white;
     text-align:center
 }
 .lof-slidecontent .preload div{
@@ -478,7 +478,7 @@ footer {
     background:transparent url("load-indicator.gif") no-repeat scroll 50% 50%;
     padding:0px;
     height:100%;
-    width:600px;
+    width:100%;
     position:relative;
     overflow:hidden;
 }
@@ -501,26 +501,29 @@ footer {
     position:absolute;
     top:150px;
     left:50px;
-    width:400px;
-    background:url("transparent_bg.png");
+    width:40%;
+    background-color: #228B22;
+    border: solid 1px;
+    border-radius: 5px;
 
     /* filter:0.7(opacity:60) */
 }
+
 .lof-main-item-desc p{
-    color:#FFF;
+    color:#ffffff;
     margin:0 8px;
-    padding:8px 0
+    padding:8px 0;
 }
 .lof-main-item-desc h3 a{
-    color:#FFF;
+    color:#ffffff;
     margin:0;
     font-size:140%;
     padding:20px 8px 2px;
     font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
 }
 .lof-main-item-desc h3 a:hover{
-    color:#FF6;
-    text-decoration:underline;
+    color:#ffffff;
+    text-decoration:snow;
 }
 
 
@@ -546,14 +549,14 @@ ul.lof-navigator li{
     right:0;
     top:00px;
     z-index:100;
-    height:300px;
-    width:310px;
+    height:100%;
+    width:30%;
     overflow:hidden;
-    color:#FFF
+    color:#ffffff;
 }
 .lof-navigator li.active{
     background:url("arrow-bg.png") no-repeat scroll left center;
-    color:#FFF
+    color:#ffffff;
 }
 .lof-navigator li:hover{
 
@@ -561,27 +564,28 @@ ul.lof-navigator li{
 
 
 .lof-navigator li h3{
-    color:#FFF;
+    color:#ffffff;
     font-size:100%;
-    padding:15px 0 0 !important;
+    padding:5px 0 0 !important;
     margin:0;
 
 }
 .lof-navigator li div{
     background:url("transparent_bg.png");
-    color:#FFF;
+    color:#ffffff;
     height:100%;
     position:relative;
     margin-left:15px;
     padding-left:15px;
-    border-top:1px solid #E1E1E1;
+    border-top:2px solid #E1E1E1;
 }
 
 .lof-navigator li.active div{
-    background:url("grad-bg.gif");
+    background: none;
+    background-color: #228B22;
     color:#FFF;
 }
-.lof-navigator li img{
+.lof-navigator li .img{
     height:60px;
     width:60px;
     margin:15px 15px 10px 0px;
@@ -589,17 +593,17 @@ ul.lof-navigator li{
     padding:3px;
     border:#C5C5C5 solid 1px;
 }
-.lof-navigator li.active img{
-    border:#6C8E5C  solid 1px;
+.lof-navigator li.active .img{
+    border:#ffffff  solid 1px;
 }
 .lof-navigator li.active h3{
-    color:#FFF;
+    color:#000000;
 }
 .lof-next{
     position:absolute;
     top:0;
     height:30px;
-    background:#F9F9F9;
+    background:#228B22;
     display:block;
     width:100%;
 }
@@ -607,7 +611,7 @@ ul.lof-navigator li{
     position:absolute;
     bottom:0;
     height:30px;
-    background:#F9F9F9;
+    background:#228B22;
     display:block;
     width:100%;
 }

@@ -4,41 +4,36 @@
 
       <!------------------------------------- THE CONTENT ------------------------------------------------->
       <div id="lofslidecontent45" class="lof-slidecontent">
+
         <div class="preload"><div></div></div>
         <!-- MAIN CONTENT -->
-        <%= @a_la_une.each do |slide| %>
+
         <div class="lof-main-wapper">
+          <%= @a_la_une.each do |slide| %>
           <div class="lof-main-item">
-            <%= image_tag('http://placehold.it/750x350') %>
+            <%= image_tag(slide.image_a_la_une) %>
             <div class="lof-main-item-desc">
               <h3><%= link_to slide.titre, slide %></h3>
 
-              <p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles, content,...</p>
+              <p><%= slide.descriptif %></p>
             </div>
           </div>
-
+          <% end %>
         </div>
-        <% end %>
+
         <!-- END MAIN CONTENT -->
         <!-- NAVIGATOR -->
 
         <div class="lof-navigator-outer">
           <ul class="lof-navigator">
-
+            <%= @a_la_une.each do |slide| %>
             <li>
               <div>
-                <%= image_tag('http://placehold.it/750x350') %>
-                <h3>ok</h3>
-                <span>20.01.2010</span> - In id, mauris viverra asperiores, bibendum in id. Eu molestie. Ac sit eu...
+                <%= image_tag(slide.image_a_la_une, class: 'img') %>
+                <p><%= slide.titre%></p>
               </div>
             </li>
-            <li>
-              <div>
-                <%= image_tag('http://placehold.it/750x350') %>
-                <h3>ok</h3>
-                <span>20.01.2010</span> - In id, mauris viverra asperiores, bibendum in id. Eu molestie. Ac sit eu...
-              </div>
-            </li>
+            <% end %>
           </ul>
         </div>
       </div>
