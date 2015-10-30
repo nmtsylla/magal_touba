@@ -11,7 +11,7 @@
         <div class="lof-main-wapper">
           <%= @a_la_une.each do |slide| %>
           <div class="lof-main-item">
-            <%= image_tag(slide.image_a_la_une) %>
+            <%= image_tag slide.image_a_la_une.url(:medium) %>
             <div class="lof-main-item-desc">
               <h3><%= link_to slide.titre, slide %></h3>
 
@@ -29,7 +29,7 @@
             <%= @a_la_une.each do |slide| %>
             <li>
               <div>
-                <%= image_tag(slide.image_a_la_une_file_name, class: 'img') %>
+                <%= image_tag slide.image_a_la_une.url(:medium, class: 'img') %>
                 <p><%= slide.titre%></p>
               </div>
             </li>
